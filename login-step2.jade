@@ -1,0 +1,37 @@
+- var page = "login-step2";
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-login
+                .login-header
+                    .login-header__text
+                        p Đăng nhập
+                .login-step2
+                    h2.login-title.mb-40 Nhập số điện thoại của bạn
+                    .login-step2__phone
+                        .d-block
+                            select.form-control
+                                option
+                                    | VN +84
+                                option
+                                    | USA +85
+                                option
+                                    | VN +86
+                        .d-block
+                            input.form-control(type='number')
+                    .login-alert
+                        p Chúng tôi sẽ gửi mã xác nhận về số điện thoại bạn đăng ký
+                    .login-btn
+                        a.btn.btn-purple.btn-round(href='login-step3.html') Tiếp tục
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+
+
+
+
+
+

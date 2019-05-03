@@ -1,11 +1,26 @@
 .life-login{
   background-color: #F7FAFE;
   min-height: 100vh;
+  .form-control{
+    padding: 10px 12px;
+    font-size: 15px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    font-weight: $semibold;
+  }
 }
 .login-header{
   text-align: center;
   &__logo{
-    padding-top: 45px;
+    padding-top: 30px;
+  }
+  &__text{
+    padding: 20px 0 50px;
+    p{
+      font-size: 17px;
+      line-height: 22px;
+      font-weight: $semibold;
+    }
   }
 }
 .login-title{
@@ -17,8 +32,50 @@
   text-align: center;
   margin-bottom: 10px;
 }
+.login-alert{
+  height: 90px;
+  text-align: center;
+  p{
+    font-size: 13px;
+    line-height: 17px;
+    color: #666666;
+    font-weight: $regular;
+    span{
+      font-weight: $semibold;
+      display: block;
+    }
+  }
+}
+.login-btn{
+  text-align: center;
+  .btn{
+    text-transform: initial;
+    font-weight: $regular;
+    padding: 12px 18px;
+    width: 190px;
+  }
+}
+.login-code{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  &__item{
+    width: 46px;
+    padding: 0 3px;
+    .form-control{
+      text-align: center;
+      padding: 10px 8px;
+      &.i-true{
+        border-color: $main-color;
+      }
+      &.i-false{
+        border-color: $red-1;
+      }
+    }
+  }
+}
 .login-step1{
-  padding: 0 15px 30px;
+  padding: 0 0 30px;
   &__photo{
     text-align: center;
     img{
@@ -27,6 +84,7 @@
   }
   &__slide{
     margin-bottom: 20px;
+    padding: 0 35px;
     &__item{
       padding-bottom: 30px;
     }
@@ -40,6 +98,7 @@
   &__btn{
     text-align: center;
     margin-bottom: 20px;
+    padding: 0 15px;
     .btn{
       width: 100%;
     }
@@ -55,6 +114,81 @@
       i{
         margin-right: 10px;
       }
+    }
+  }
+}
+.login-step2{
+  padding: 0 25px;
+  &__phone{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    .d-block{
+      padding: 0 4px;
+      &:first-child{
+        width: 100px;
+      }
+      &:last-child{
+        width: calc(100% - 100px);
+      }
+    }
+  }
+}
+.login-step3{
+  padding: 0 25px;
+}
+.login-step4{
+  padding: 0 25px;
+  &__note{
+    font-size: 12px;
+    line-height: 16px;
+    color: #666666;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__alert{
+    font-size: 12px;
+    line-height: 19px;
+    color: $red-2;
+    margin-top: 5px;
+  }
+  .form-group{
+    margin-bottom: 35px;
+  }
+}
+.login-success{
+  padding: 0 0 30px;
+  &__photo{
+    img{
+      width: 100%;
+    }
+  }
+  &__text{
+    text-align: center;
+    margin-bottom: 25px;
+    h3{
+      font-size: 20px;
+      line-height: 24px;
+      color: $black-1;
+      font-weight: $regular;
+      margin-bottom: 15px;
+      span{
+        display: block;
+        color: $main-color;
+        font-weight: $semibold;
+      }
+    }
+    p{
+      font-size: 16px;
+      line-height: 18px;
+      color: #666666;
+      font-weight: $regular;
+    }
+  }
+  &__btn{
+    text-align: center;
+    .btn{
+      width: 180px;
     }
   }
 }

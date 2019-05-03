@@ -1,0 +1,34 @@
+select.form-control:not([size]):not([multiple]){
+  height: auto;
+}
+.form-control{
+  border: 1px solid #D3D6E9;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: $regular;
+  color: $black-1;
+  &:focus{
+    color: $black-1;
+    border-color: $main-color;
+    outline: 0;
+    box-shadow: none;
+  }
+  &:active{
+    border-color: $main-color;
+  }
+  &::-webkit-input-placeholder {
+    color:#8F8E94;
+  }
+  &::-moz-placeholder {
+    color:#8F8E94;
+  }
+  &:-ms-input-placeholder {
+    color:#8F8E94;
+  }
+  &:-moz-placeholder {
+    color:#8F8E94;
+  }
+
+}

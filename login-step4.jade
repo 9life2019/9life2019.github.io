@@ -1,0 +1,29 @@
+- var page = "login-step4";
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-login
+                .login-header
+                    .login-header__text
+                        p Đăng nhập
+                .login-step4
+                    h2.login-title
+                        | Lựa chọn tên hiển thị
+                    p.login-step4__note Tên hiển thị của bạn sẽ được sử dụng để đại diện cho bạn trên 9life
+                    .form-group
+                        input.form-control(type='text')
+                        p.login-step4__alert Tên hiển thị chứa từ ngữ nhạy cảm
+                    .login-btn
+                        a.btn.btn-purple.btn-round(href='login-success.html')  Tiếp tục
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+
+
+
+
+
+

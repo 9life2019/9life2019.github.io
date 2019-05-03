@@ -1,0 +1,42 @@
+- var page = "login-step3";
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-login
+                .login-header
+                    .login-header__text
+                        p Đăng nhập
+                .login-step3
+                    h2.login-title.mb-40 Nhập mã xác thực
+                    .login-code
+                        .login-code__item
+                            input.form-control.i-true(type='number')
+                        .login-code__item
+                            input.form-control.i-false(type='number')
+                        .login-code__item
+                            input.form-control(type='number')
+                        .login-code__item
+                            input.form-control(type='number')
+                        .login-code__item
+                            input.form-control(type='number')
+                        .login-code__item
+                            input.form-control(type='number')
+                    .login-alert
+                        p
+                            | Mã xác thực gồm 6 chữ số được gửi về số điện thoại&nbsp;
+                            span 090 123 4567
+                    .login-btn
+                        a.btn.btn-purple.btn-round.btn-disable Gửi lại mã trong 55s
+                        a.btn.btn-purple.btn-round(href='login-step4.html')  Tiếp tục
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+
+
+
+
+
+

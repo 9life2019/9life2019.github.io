@@ -1,0 +1,30 @@
+- var page = "login-success";
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-login
+                .login-header
+                    .login-header__logo
+                        h1
+                            img(src='images/logo-purple.png')
+                .login-success
+                    .login-success__photo
+                        img(src='images/login-success.jpg')
+                    .login-success__text
+                        h3
+                            | Chào mừng
+                            span Hoàng Minh
+                        p Chúc bạn có những giây đáng đáng quý giữa cuộc sống đầy bộn bề này
+                    .login-success__btn
+                        a.btn.btn-purple.btn-round(href='#') Hoàn tất
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+
+
+
+
+

@@ -16,6 +16,14 @@
     background-color:$main-color;
   }
   &:active, &:focus{
-    box-shadow: 0 0 0 0.2rem rgba(106, 40, 250, 0.5)
+    box-shadow: 0 0 0 0.2rem rgba(106, 40, 250, 0.5);
   }
+}
+.btn-disable{
+  pointer-events:none;
+  background-color: $gray-1;
+  color: $gray-2!important;
+}
+.btn-round{
+  border-radius: 60px;
 }
