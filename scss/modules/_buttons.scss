@@ -1,0 +1,21 @@
+.btn{
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: -0.41px;
+  text-transform: uppercase;
+  font-weight: $semibold;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+}
+.btn-purple{
+  background-color: $main-color;
+  color: $white-1!important;
+  &:hover{
+    color: $white-1;
+    background-color:$main-color;
+  }
+  &:active, &:focus{
+    box-shadow: 0 0 0 0.2rem rgba(106, 40, 250, 0.5)
+  }
+}
