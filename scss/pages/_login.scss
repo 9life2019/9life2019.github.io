@@ -85,14 +85,26 @@
   &__slide{
     margin-bottom: 20px;
     padding: 0 35px;
-    &__item{
-      padding-bottom: 30px;
-    }
     &__text{
       text-align: center;
       font-size: 15px;
       line-height: 20px;
       color: #666666;
+    }
+    .owl-nav{
+      display: none;
+    }
+    .owl-dots{
+      margin-top: 10px;
+    }
+    .owl-dots .owl-dot span{
+      width: 6px;
+      height: 6px;
+      margin: 0 4px;
+      background: #C4C4C4;
+    }
+    .owl-dots .owl-dot.active span{
+      background: $main-color;
     }
   }
   &__btn{

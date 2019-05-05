@@ -2,7 +2,18 @@
 doctype html
 html(lang="vi")
     head
-        include jades/head.jade
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/libs/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
+        link(rel="stylesheet" href="css/styles.css")
+
     body(ontouchstart='')
         main.life-wrapper
             section.life-login
@@ -13,7 +24,7 @@ html(lang="vi")
                 .login-step1
                     .login-step1__photo
                         img(src='images/login-step1.jpg')
-                    .login-step1__slide
+                    .login-step1__slide.owl-carousel.owl-theme
                         .login-step1__slide__item
                             h2.login-title Book bàn bất cứ đâu
                             p.login-step1__slide__text Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -32,16 +43,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
-        script(type='text/javascript' src="js/slick.min.js")
+        script(type='text/javascript' src="js/owl.carousel.min.js")
         script.
-            $('.login-step1__slide').slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                //autoplay: true,
-                autoplaySpeed: 5000,
-                arrows: false,
-                dots: true
-            });
+            $('.login-step1__slide').owlCarousel({
+                loop: true,
+                nav: true,
+                items: 1
+            })
 
 
 
