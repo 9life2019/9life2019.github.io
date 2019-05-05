@@ -1,0 +1,427 @@
+- var page = "home";
+doctype html
+html(lang="vi")
+    head
+        include jades/head.jade
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-home
+                .home-header
+                    .home-header__logo
+                        h1
+                            a(href='#')
+                                img.logo-white(src='images/logo-white.svg')
+                                img.logo-black(src='images/logo-black.svg')
+                    .home-header__search
+                        a(href='#')
+                            i.fas.fa-search
+                .life-home__banner
+                    img(src='images/home-banner.jpg')
+                .life-home__card
+                    .home-city
+                        .home-city__left
+                            h2
+                                | Hanoi
+                                i.fas.fa-chevron-down
+                            p Lorem ipsum dolor sit amet, consecte adipiscing elit. Lorem ipsum dolor sit amet, consecte adipiscing elit
+                        .home-city__right
+                            .weather-box
+                                .weather-box__icon
+                                    i.fas.fa-cloud
+                                    i.fas.fa-bolt
+                                .weather-box__numb
+                                    p.p1 29&#176;C
+                                    p.p2 24&#176;C
+                    .home-profile
+                        .home-profile__top
+                            .home-profile__name
+                                p.p1 Good evening
+                                p.p2 Jason Chen
+                            .home-profile__avatar
+                                img(src='images/home-avatar.png')
+                        .home-profile__bottom
+                            .home-profile__bottom__row
+                                .home-profile__bottom__item
+                                    img(src='images/i-booking.svg')
+                                    span
+                                        | 12
+                                        small Bookings
+                                .home-profile__bottom__item
+                                    img(src='images/i-tickets.svg')
+                                    span
+                                        | 3
+                                        small Tickets
+                                .home-profile__bottom__item
+                                    img(src='images/i-fav.svg')
+                                    span
+                                        | 12
+                                        small Favorites
+                    .home-tab
+                        .home-tab__row
+                            .home-tab__item
+                                a
+                                    .home-tab__icon
+                                        img(src='images/i-o-table.svg')
+                                    span Đặt bàn
+                            .home-tab__item
+                                a
+                                    .home-tab__icon
+                                        img(src='images/i-o-karaoke.svg')
+                                    span Đặt Karaoke
+                            .home-tab__item
+                                a
+                                    .home-tab__icon
+                                        img(src='images/i-o-tickets.svg')
+                                    span Đặt vé
+                .life-home__nearby
+                    .home-title
+                        h3 Nearby
+                    .list-bar
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                .life-home__offers
+                    .home-title
+                        h3 Best Offers
+                    .list-offers
+                        .list-offers__item
+                            .life-card
+                                .life-card__img
+                                    img(src='images/offers-banner.jpg')
+                                    .life-card__sale -30%
+                                    .life-card__gradient
+                                    .life-card__badge
+                                        .badge.badge_red
+                                            i.fas.fa-circle
+                                            | hot deal
+                                        .badge.badge_yellow
+                                            i.fas.fa-circle
+                                            | 129 booked
+                                .life-card__content
+                                    p.life-card__name Luxury Package
+                                    p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    p.life-card__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                                    .life-card__bottom
+                                        .life-card__price
+                                            p 1.200.000đ
+                                            strike 2.400.000đ
+                                        .life-card__btn
+                                            a.btn.btn-purple.btn-round(href='#') MUA
+                        .list-offers__item
+                            .life-card
+                                .life-card__img
+                                    img(src='images/offers-banner.jpg')
+                                    .life-card__sale -30%
+                                    .life-card__gradient
+                                    .life-card__badge
+                                        .badge.badge_red
+                                            i.fas.fa-circle
+                                            | hot deal
+                                        .badge.badge_yellow
+                                            i.fas.fa-circle
+                                            | 129 booked
+                                .life-card__content
+                                    p.life-card__name Luxury Package
+                                    p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    p.life-card__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                                    .life-card__bottom
+                                        .life-card__price
+                                            p 1.200.000đ
+                                            strike 2.400.000đ
+                                        .life-card__btn
+                                            a.btn.btn-purple.btn-round(href='#') MUA
+                        .list-offers__item
+                            .life-card
+                                .life-card__img
+                                    img(src='images/offers-banner.jpg')
+                                    .life-card__sale -30%
+                                    .life-card__gradient
+                                    .life-card__badge
+                                        .badge.badge_red
+                                            i.fas.fa-circle
+                                            | hot deal
+                                        .badge.badge_yellow
+                                            i.fas.fa-circle
+                                            | 129 booked
+                                .life-card__content
+                                    p.life-card__name Luxury Package
+                                    p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    p.life-card__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                                    .life-card__bottom
+                                        .life-card__price
+                                            p 1.200.000đ
+                                            strike 2.400.000đ
+                                        .life-card__btn
+                                            a.btn.btn-purple.btn-round(href='#') MUA
+                        .list-offers__item
+                            .life-card
+                                .life-card__img
+                                    img(src='images/offers-banner.jpg')
+                                    .life-card__sale -30%
+                                    .life-card__gradient
+                                    .life-card__badge
+                                        .badge.badge_red
+                                            i.fas.fa-circle
+                                            | hot deal
+                                        .badge.badge_yellow
+                                            i.fas.fa-circle
+                                            | 129 booked
+                                .life-card__content
+                                    p.life-card__name Luxury Package
+                                    p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    p.life-card__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                                    .life-card__bottom
+                                        .life-card__price
+                                            p 1.200.000đ
+                                            strike 2.400.000đ
+                                        .life-card__btn
+                                            a.btn.btn-purple.btn-round(href='#') MUA
+                .life-home__events
+                    .home-title
+                        h3 Events
+                    .list-events
+                        .list-events__item
+                            a.events-item(href='events-detail.html')
+                                .events-item__poster
+                                    img(src='images/events-poster.jpg')
+                                .events-item__content
+                                    .events-item__time
+                                        i.far.fa-calendar-alt
+                                        span 21:00 Hôm nay
+                                    p.events-item__name Buffet Drinks Party BRay & Pharreal Phuong
+                                    p.events-item__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                        .list-events__item
+                            a.events-item(href='events-detail.html')
+                                .events-item__poster
+                                    img(src='images/events-poster.jpg')
+                                .events-item__content
+                                    .events-item__time
+                                        i.far.fa-calendar-alt
+                                        span 21:00 Hôm nay
+                                    p.events-item__name Buffet Drinks Party BRay & Pharreal Phuong
+                                    p.events-item__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                        .list-events__item
+                            a.events-item(href='events-detail.html')
+                                .events-item__poster
+                                    img(src='images/events-poster.jpg')
+                                .events-item__content
+                                    .events-item__time
+                                        i.far.fa-calendar-alt
+                                        span 21:00 Hôm nay
+                                    p.events-item__name Buffet Drinks Party BRay & Pharreal Phuong
+                                    p.events-item__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                        .list-events__item
+                            a.events-item(href='events-detail.html')
+                                .events-item__poster
+                                    img(src='images/events-poster.jpg')
+                                .events-item__content
+                                    .events-item__time
+                                        i.far.fa-calendar-alt
+                                        span 21:00 Hôm nay
+                                    p.events-item__name Buffet Drinks Party BRay & Pharreal Phuong
+                                    p.events-item__address
+                                        i.fas.fa-map-marker-alt
+                                        span 1900 Nightclub · 15m
+                .life-home__viewed
+                    .home-title
+                        h3 Recently Viewed
+                    .list-bar
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script.
+            var homeHeaderTop = $('.home-header').offset().top;
+            var homeHeaderHeight = $('.home-header').height();
+            var homeHeaderBottom = homeHeaderTop + homeHeaderHeight;
+            $(window).scroll(function () {
+                if ($(window).scrollTop() >= homeHeaderBottom) {
+                    $('.home-header').addClass('home-header_fixed');
+                } else {
+                    $('.home-header').removeClass('home-header_fixed');
+                }
+            });
+
+
+
+
+
+

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>9life</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-purple.png">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <main class="life-wrapper">
+      <section class="life-home">
+        <div class="home-header">
+          <div class="home-header__logo">
+            <h1><a href="#"><img src="images/logo-white.svg" class="logo-white"><img src="images/logo-black.svg" class="logo-black"></a></h1>
+          </div>
+          <div class="home-header__search"><a href="#"><i class="fas fa-search"></i></a></div>
+        </div>
+        <div class="life-home__banner"><img src="images/home-banner.jpg"></div>
+        <div class="life-home__card">
+          <div class="home-city">
+            <div class="home-city__left">
+              <h2>Hanoi<i class="fas fa-chevron-down"></i></h2>
+              <p>Lorem ipsum dolor sit amet, consecte adipiscing elit. Lorem ipsum dolor sit amet, consecte adipiscing elit</p>
+            </div>
+            <div class="home-city__right">
+              <div class="weather-box">
+                <div class="weather-box__icon"><i class="fas fa-cloud"></i><i class="fas fa-bolt"></i></div>
+                <div class="weather-box__numb">
+                  <p class="p1">29&#176;C</p>
+                  <p class="p2">24&#176;C</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-profile">
+            <div class="home-profile__top">
+              <div class="home-profile__name">
+                <p class="p1">Good evening</p>
+                <p class="p2">Jason Chen</p>
+              </div>
+              <div class="home-profile__avatar"><img src="images/home-avatar.png"></div>
+            </div>
+            <div class="home-profile__bottom">
+              <div class="home-profile__bottom__row">
+                <div class="home-profile__bottom__item"><img src="images/i-booking.svg"><span>12<small>Bookings</small></span></div>
+                <div class="home-profile__bottom__item"><img src="images/i-tickets.svg"><span>3<small>Tickets</small></span></div>
+                <div class="home-profile__bottom__item"><img src="images/i-fav.svg"><span>12<small>Favorites</small></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-tab">
+            <div class="home-tab__row">
+              <div class="home-tab__item"><a>
+                  <div class="home-tab__icon"><img src="images/i-o-table.svg"></div><span>Đặt bàn</span></a></div>
+              <div class="home-tab__item"><a>
+                  <div class="home-tab__icon"><img src="images/i-o-karaoke.svg"></div><span>Đặt Karaoke</span></a></div>
+              <div class="home-tab__item"><a>
+                  <div class="home-tab__icon"><img src="images/i-o-tickets.svg"></div><span>Đặt vé</span></a></div>
+            </div>
+          </div>
+        </div>
+        <div class="life-home__nearby">
+          <div class="home-title">
+            <h3>Nearby</h3>
+          </div>
+          <div class="list-bar">
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="life-home__offers">
+          <div class="home-title">
+            <h3>Best Offers</h3>
+          </div>
+          <div class="list-offers">
+            <div class="list-offers__item">
+              <div class="life-card">
+                <div class="life-card__img"><img src="images/offers-banner.jpg">
+                  <div class="life-card__sale">-30%</div>
+                  <div class="life-card__gradient"></div>
+                  <div class="life-card__badge">
+                    <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                    <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                  </div>
+                </div>
+                <div class="life-card__content">
+                  <p class="life-card__name">Luxury Package</p>
+                  <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p class="life-card__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                  <div class="life-card__bottom">
+                    <div class="life-card__price">
+                      <p>1.200.000đ</p>
+                      <strike>2.400.000đ</strike>
+                    </div>
+                    <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-offers__item">
+              <div class="life-card">
+                <div class="life-card__img"><img src="images/offers-banner.jpg">
+                  <div class="life-card__sale">-30%</div>
+                  <div class="life-card__gradient"></div>
+                  <div class="life-card__badge">
+                    <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                    <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                  </div>
+                </div>
+                <div class="life-card__content">
+                  <p class="life-card__name">Luxury Package</p>
+                  <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p class="life-card__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                  <div class="life-card__bottom">
+                    <div class="life-card__price">
+                      <p>1.200.000đ</p>
+                      <strike>2.400.000đ</strike>
+                    </div>
+                    <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-offers__item">
+              <div class="life-card">
+                <div class="life-card__img"><img src="images/offers-banner.jpg">
+                  <div class="life-card__sale">-30%</div>
+                  <div class="life-card__gradient"></div>
+                  <div class="life-card__badge">
+                    <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                    <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                  </div>
+                </div>
+                <div class="life-card__content">
+                  <p class="life-card__name">Luxury Package</p>
+                  <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p class="life-card__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                  <div class="life-card__bottom">
+                    <div class="life-card__price">
+                      <p>1.200.000đ</p>
+                      <strike>2.400.000đ</strike>
+                    </div>
+                    <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-offers__item">
+              <div class="life-card">
+                <div class="life-card__img"><img src="images/offers-banner.jpg">
+                  <div class="life-card__sale">-30%</div>
+                  <div class="life-card__gradient"></div>
+                  <div class="life-card__badge">
+                    <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                    <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                  </div>
+                </div>
+                <div class="life-card__content">
+                  <p class="life-card__name">Luxury Package</p>
+                  <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  <p class="life-card__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                  <div class="life-card__bottom">
+                    <div class="life-card__price">
+                      <p>1.200.000đ</p>
+                      <strike>2.400.000đ</strike>
+                    </div>
+                    <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="life-home__events">
+          <div class="home-title">
+            <h3>Events</h3>
+          </div>
+          <div class="list-events">
+            <div class="list-events__item"><a href="events-detail.html" class="events-item">
+                <div class="events-item__poster"><img src="images/events-poster.jpg"></div>
+                <div class="events-item__content">
+                  <div class="events-item__time"><i class="far fa-calendar-alt"></i><span>21:00 Hôm nay</span></div>
+                  <p class="events-item__name">Buffet Drinks Party BRay & Pharreal Phuong</p>
+                  <p class="events-item__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                </div></a></div>
+            <div class="list-events__item"><a href="events-detail.html" class="events-item">
+                <div class="events-item__poster"><img src="images/events-poster.jpg"></div>
+                <div class="events-item__content">
+                  <div class="events-item__time"><i class="far fa-calendar-alt"></i><span>21:00 Hôm nay</span></div>
+                  <p class="events-item__name">Buffet Drinks Party BRay & Pharreal Phuong</p>
+                  <p class="events-item__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                </div></a></div>
+            <div class="list-events__item"><a href="events-detail.html" class="events-item">
+                <div class="events-item__poster"><img src="images/events-poster.jpg"></div>
+                <div class="events-item__content">
+                  <div class="events-item__time"><i class="far fa-calendar-alt"></i><span>21:00 Hôm nay</span></div>
+                  <p class="events-item__name">Buffet Drinks Party BRay & Pharreal Phuong</p>
+                  <p class="events-item__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                </div></a></div>
+            <div class="list-events__item"><a href="events-detail.html" class="events-item">
+                <div class="events-item__poster"><img src="images/events-poster.jpg"></div>
+                <div class="events-item__content">
+                  <div class="events-item__time"><i class="far fa-calendar-alt"></i><span>21:00 Hôm nay</span></div>
+                  <p class="events-item__name">Buffet Drinks Party BRay & Pharreal Phuong</p>
+                  <p class="events-item__address"><i class="fas fa-map-marker-alt"></i><span>1900 Nightclub · 15m</span></p>
+                </div></a></div>
+          </div>
+        </div>
+        <div class="life-home__viewed">
+          <div class="home-title">
+            <h3>Recently Viewed</h3>
+          </div>
+          <div class="list-bar">
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      var homeHeaderTop = $('.home-header').offset().top;
+      var homeHeaderHeight = $('.home-header').height();
+      var homeHeaderBottom = homeHeaderTop + homeHeaderHeight;
+      $(window).scroll(function () {
+          if ($(window).scrollTop() >= homeHeaderBottom) {
+              $('.home-header').addClass('home-header_fixed');
+          } else {
+              $('.home-header').removeClass('home-header_fixed');
+          }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+.weather-box{
+  text-align: center;
+  &__icon{
+    margin-bottom: 10px;
+    i{
+      display: block;
+    }
+    .fa-cloud{
+      color: #999999;
+      font-size: 29px;
+    }
+    .fa-bolt{
+      color: #EFD358;
+      margin-top: -10px;
+    }
+  }
+  &__numb{
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: $white-1;
+    }
+    .p2{
+      opacity: .5;
+    }
+  }
+}
