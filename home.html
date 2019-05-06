@@ -8,6 +8,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-purple.png">
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body ontouchstart="">
@@ -67,7 +69,41 @@
           <div class="home-title">
             <h3>Nearby</h3>
           </div>
-          <div class="list-bar">
+          <div class="list-bar owl-carousel owl-theme">
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="bar-detail.html" class="bar-item__link"></a>
+              </div>
+            </div>
             <div class="list-bar__item">
               <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
                 <div class="bar-item__sale">-50%</div>
@@ -142,7 +178,7 @@
           <div class="home-title">
             <h3>Best Offers</h3>
           </div>
-          <div class="list-offers">
+          <div class="list-offers owl-carousel owl-theme">
             <div class="list-offers__item">
               <div class="life-card">
                 <div class="life-card__img"><img src="images/offers-banner.jpg">
@@ -245,7 +281,7 @@
           <div class="home-title">
             <h3>Events</h3>
           </div>
-          <div class="list-events">
+          <div class="list-events owl-carousel owl-theme">
             <div class="list-events__item"><a href="events-detail.html" class="events-item">
                 <div class="events-item__poster"><img src="images/events-poster.jpg"></div>
                 <div class="events-item__content">
@@ -280,7 +316,7 @@
           <div class="home-title">
             <h3>Recently Viewed</h3>
           </div>
-          <div class="list-bar">
+          <div class="list-bar owl-carousel owl-theme">
             <div class="list-bar__item">
               <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
                 <div class="bar-item__sale">-50%</div>
@@ -356,6 +392,7 @@
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script>
       var homeHeaderTop = $('.home-header').offset().top;
       var homeHeaderHeight = $('.home-header').height();
@@ -367,6 +404,31 @@
               $('.home-header').removeClass('home-header_fixed');
           }
       });
+      
+    </script>
+    <script>
+      $('.list-bar').owlCarousel({
+          nav: false,
+          dots: false,
+          autoWidth:true,
+          items: 3
+      })
+    </script>
+    <script>
+      $('.list-offers').owlCarousel({
+          nav: false,
+          dots: false,
+          autoWidth: true,
+          items: 2
+      })
+    </script>
+    <script>
+      $('.list-events').owlCarousel({
+          nav: false,
+          dots: false,
+          autoWidth: true,
+          items: 2
+      })
     </script>
   </body>
 </html>

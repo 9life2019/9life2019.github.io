@@ -2,7 +2,17 @@
 doctype html
 html(lang="vi")
     head
-        include jades/head.jade
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/libs/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
+        link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
         main.life-wrapper
             section.life-home
@@ -76,7 +86,49 @@ html(lang="vi")
                 .life-home__nearby
                     .home-title
                         h3 Nearby
-                    .list-bar
+                    .list-bar.owl-carousel.owl-theme
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='bar-detail.html')
                         .list-bar__item
                             .bar-item
                                 img.bar-item__img(src='images/bar-item.jpg')
@@ -164,7 +216,7 @@ html(lang="vi")
                 .life-home__offers
                     .home-title
                         h3 Best Offers
-                    .list-offers
+                    .list-offers.owl-carousel.owl-theme
                         .list-offers__item
                             .life-card
                                 .life-card__img
@@ -268,7 +320,7 @@ html(lang="vi")
                 .life-home__events
                     .home-title
                         h3 Events
-                    .list-events
+                    .list-events.owl-carousel.owl-theme
                         .list-events__item
                             a.events-item(href='events-detail.html')
                                 .events-item__poster
@@ -320,7 +372,7 @@ html(lang="vi")
                 .life-home__viewed
                     .home-title
                         h3 Recently Viewed
-                    .list-bar
+                    .list-bar.owl-carousel.owl-theme
                         .list-bar__item
                             .bar-item
                                 img.bar-item__img(src='images/bar-item.jpg')
@@ -408,6 +460,7 @@ html(lang="vi")
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
+        script(type='text/javascript' src="js/owl.carousel.min.js")
         script.
             var homeHeaderTop = $('.home-header').offset().top;
             var homeHeaderHeight = $('.home-header').height();
@@ -420,8 +473,27 @@ html(lang="vi")
                 }
             });
 
-
-
+        script.
+            $('.list-bar').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth:true,
+                items: 3
+            })
+        script.
+            $('.list-offers').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 2
+            })
+        script.
+            $('.list-events').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 2
+            })
 
 
 

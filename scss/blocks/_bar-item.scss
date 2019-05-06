@@ -136,17 +136,15 @@
   }
 }
 .list-bar{
-  white-space: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
   padding-left: 15px;
   &__item{
-    display: inline-block;
-    width: 160px;
     padding: 0 5px;
     &:first-child{
       padding-left: 0;
+    }
+    .bar-item{
+      width: 160px;
     }
   }
 }

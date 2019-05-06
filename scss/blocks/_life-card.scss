@@ -112,17 +112,15 @@
   }
 }
 .list-offers{
-  white-space: nowrap;
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   padding-left: 15px;
+  overflow: hidden;
   &__item{
-    width: calc(100% - 50px);
-    display: inline-block;
     padding: 0 5px;
     &:first-child{
       padding-left: 0;
+    }
+    .life-card{
+      width: 330px;
     }
   }
 }
