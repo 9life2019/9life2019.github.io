@@ -1,0 +1,145 @@
+- var page = "co-payment";
+doctype html
+html(lang="vi")
+    head
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/libs/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
+        link(rel="stylesheet" href="css/styles.css")
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-checkout
+                .co-header
+                    .co-header__back
+                        a(href='#')
+                            i.fas.fa-chevron-left
+                            | Back
+                    .co-header__text
+                        p Thanh toán
+                .co-payment
+                    .checkout-top
+                        .checkout-top__left
+                            .checkout-title
+                                h5 Luxury Package
+                            .checkout-location
+                                .checkout-location__icon
+                                    i.fas.fa-map-marker-alt
+                                .checkout-location__text
+                                    span 1900 Nightclub
+                                        i 36 Hàng Buồm, Hà Nội
+                        .checkout-top__right
+                            img(src="images/checkout-item1.png")
+                    .co-payment__date
+                        .checkout-location
+                            .checkout-location__icon
+                                i.fas.fa-calendar-alt
+                            .checkout-location__text
+                                span Ngày
+                        .co-payment__input
+                            input.form-control(placeholder="Thứ 3, 25 Tháng 4, 2019")
+                            button Đổi
+                    .co-payment__benefit
+                        .checkout-location
+                            .checkout-location__icon
+                                i.fas.fa-check
+                            .checkout-location__text
+                                p Khách được đi cửa riêng
+                        .checkout-location
+                            .checkout-location__icon
+                                i.fas.fa-check
+                            .checkout-location__text
+                                p Đã bao gồm tất cả các chi phí
+                        .checkout-location
+                            .checkout-location__icon
+                                i.fas.fa-check
+                            .checkout-location__text
+                                p Đảm bảo giữ chỗ đến 11h
+                        .checkout-location
+                            .checkout-location__icon
+                                i.fas.fa-times
+                            .checkout-location__text
+                                p Điều khoản cần chú ý
+                    .co-payment__total
+                        .co-payment__detail
+                            p Tổng tiền
+                            p 2.400.000đ
+                        .co-payment__detail
+                            p Giảm
+                            p -1.200.000đ
+                        .co-payment__detail
+                            p.semibold Cần thanh toán
+                            p.price 1.200.000đ
+                    .co-payment__info
+                        .co-payment__radio
+                            .radio
+                                input(type='radio' id='r1' name='radio')
+                                label(for='r1') Anh
+                            .radio
+                                input(type='radio' id='r2' name='radio')
+                                label(for='r2') Chị
+                        .form-group
+                            input.form-control(type="text" placeholder="Họ và Tên")
+                        .form-group
+                            input.form-control(type="text" placeholder="Số Điện Thoại")
+                        .form-group
+                            input.form-control(type="text" placeholder="Yêu cầu khác (không bắt buộc)")
+                        p Quý khách hàng sẽ nhận mã booking gửi về số điện thoại và trong tài khoản app ngay sau khi thanh toán xong.
+                    .checkout-location
+                        .checkout-location__icon
+                            i.fas.fa-credit-card
+                        .checkout-location__text
+                            span Lựa chọn hình thức thanh toán
+                    .co-payment__group.active
+                        .checkout-top
+                            .checkout-top__right
+                                img.payment(src="images/payment-1.png")
+                            .checkout-location
+                                .checkout-location__text
+                                    span Thanh toán bằng Thẻ nội địa
+                                        i Quý khách sẽ được chuyển đến cổng thanh toán 123pay để thanh toán
+                    .co-payment__group
+                        .checkout-top
+                            .checkout-top__right
+                                img.payment(src="images/payment-2.png")
+                            .checkout-location
+                                .checkout-location__text
+                                    span Thanh toán bằng Thẻ quốc tế
+                                        i Quý khách sẽ được chuyển đến cổng thanh toán 123pay để thanh toán
+
+                    .co-payment__group
+                        .checkout-top
+                            .checkout-top__right
+                                img.payment(src="images/payment-3.svg")
+                            .checkout-location
+                                .checkout-location__text
+                                    span Thanh toán bằng ZaloPay
+                                        i Quý khách vui lòng cài app ZaloPay để thuận lợi cho việc thanh toán
+
+                    .co-payment__group
+                        .checkout-top
+                            .checkout-top__right
+                                img.payment(src="images/payment-4.png")
+                            .checkout-location
+                                .checkout-location__text
+                                    span Thanh toán bằng Ví Momo
+                                        i Quý khách vui lòng cài app Momo để thuận lợi cho việc thanh toán
+
+                    .co-payment__btn
+                        a(href="co-success.html") Thanh Toán
+
+
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script.
+
+
+
+
