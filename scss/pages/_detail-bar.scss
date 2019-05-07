@@ -1,0 +1,50 @@
+.detail-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 20px 15px;
+  &__back{
+    background-color: #FFEA31;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #000;
+    &:active,
+    &:focus{
+      color:#fff;
+    }
+  }
+}
+.detail-bar{
+  &__banner{
+    width: 100%;
+    height: 280px;
+    margin-top: -72px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__name{
+    .home-profile{
+      border-radius: 0;
+      background: linear-gradient(195.02deg, #6A28FA -0.4%, #250054 82.39%);
+      &__top{
+        align-items: initial;
+        margin-bottom: 20px;
+      }
+      &__avatar{
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+  &__events{}
+  &__booking{}
+  &__info{}
+}

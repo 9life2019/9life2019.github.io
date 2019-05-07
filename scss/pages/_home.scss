@@ -142,6 +142,19 @@
       color: $white-1;
       font-weight: $bold;
     }
+    .p3{
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      text-transform: uppercase;
+      color: #47FF43;
+      margin-top: 15px;
+      font-weight: $semibold;
+      span{
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+    }
   }
   &__avatar{
     width: 56px;
@@ -153,6 +166,25 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+  &__info{
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: $white-1;
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      span{
+        vertical-align: middle;
+        padding-left: 10px;
+      }
+      i{
+        color: rgba(255, 255, 255, 0.5);
+      }
     }
   }
 }

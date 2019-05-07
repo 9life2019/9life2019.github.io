@@ -1,0 +1,17 @@
+.icon-round{
+  border-radius: 23px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  &__item{
+    padding: 4px 12px;
+    border-right: 1px solid  rgba(255, 255, 255, 0.1);
+    &:last-child{
+      border-right: none;
+    }
+    i{
+      color: #fff;
+      font-size: 14px;
+    }
+  }
+}
