@@ -1,4 +1,4 @@
-.checkout-header {
+.co-header {
   position: relative;
   padding: 15px;
   &__back {
@@ -25,84 +25,33 @@
     }
   }
 }
-.checkout-payment {
+.co-payment {
   background-color: #EFF0F6;
   padding: 18px;
-  &__luxury {
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  &__title {
-    h5 {
-      font-size: 22px;
-      line-height: 24px;
-      font-weight: $bold;
-      padding-bottom: 15px;
-    }
-  }
-  &__item {
-    display: flex;
-    .fa-map-marker-alt, .fa-calendar-alt, .fa-credit-card {
-      color: $main-color;
-      font-size: 16px;
-    }
-    .fa-check, .fa-times {
-      background-color: #29D930;
-      color: $white-1;
-      border-radius: 50%;
-      padding: 5px;
-      font-size: 10px;
-    }
-    .fa-times {
-      background-color: #FF3B30;
-      padding: 5px 7px;
-    }
-  }
-  &__text {
-    padding-left: 10px;
-    span {
-      font-size: 15px;
-      line-height: 20px;
-      font-weight: $semibold;
-      color: $black-1;
-      i {
-        display: block;
-        color:#8F8E94;
-        font-weight: $regular;
-        font-style: initial;
-      }
-    }
-    p {
-      padding-bottom: 10px;
-    }
-  }
-  &__photo {
-    img {
-      border-radius: 10px;
-    }
-    .payment {
-      border-radius: 5px;
-      vertical-align: text-top;
-    }
-  }
   &__date {
-    padding-bottom: 20px;
+    padding: 20px 0;
   }
   &__input {
     position: relative;
     margin-top: 10px;
-    .change {
+    button {
       position: absolute;
       padding: 7px 17px;
       background-color: #E7E2F4;
       top: 8px;
       right: 15px;
       color: $black-1;
-      &:hover {
-        text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
       }
+    }
+    input::placeholder {
+      font-size: 17px;
+      line-height: 19px;
+      letter-spacing: -0.41px;
+      color: $black-1;
     }
   }
   &__benefit {
@@ -114,6 +63,16 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7px;
+    p {
+      letter-spacing: -0.24px;
+      &.price {
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.38px;
+        font-weight: $bold;
+        color: $red-2;
+      }
+    }
   }
   &__total {
     padding: 20px 0;
@@ -125,12 +84,15 @@
     }
   }
   &__info {
-    padding: 23px 0;
+    padding: 20px 0;
     .form-group {
       margin-bottom: 10px;
     }
     p {
       color:#8F8E94 ;
+      line-height: 20px;
+      font-size: 15px;
+      font-weight: $regular;
     }
   }
   &__radio {
@@ -139,6 +101,9 @@
     padding-bottom: 20px;
     .radio {
       padding-right: 25px;
+      label {
+        font-size: 17px;
+      }
     }
   }
   &__group {
@@ -154,6 +119,23 @@
     &:active {
       border-color:$purple-2;
     }
+    .checkout-location {
+      padding: 0;
+      span {
+        font-size: 17px;
+        line-height: 19px;
+        letter-spacing: -0.41px;
+        i {
+          font-size: 11px;
+          line-height: 13px;
+          letter-spacing: 0.07px;
+          color: #777777;
+        }
+      }
+      &__text {
+        padding-left: 15px;
+      }
+    }
   }
   &__btn {
     background-color: $main-color;
@@ -167,6 +149,234 @@
       text-transform: uppercase;
       font-weight: $semibold;
       font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.checkout-top {
+  display: flex;
+  justify-content: space-between;
+  &__right {
+    img {
+      border-radius: 10px;
+    }
+    .payment {
+      border-radius: 5px;
+      vertical-align: text-top;
+    }
+  }
+}
+.checkout-title {
+  padding-bottom: 15px;
+  h5 {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: $bold;
+    letter-spacing: 0.35px;
+  }
+}
+.checkout-location {
+  display: flex;
+  .fa-map-marker-alt, .fa-calendar-alt, .fa-credit-card {
+    color: $main-color;
+    font-size: 16px;
+  }
+  .fa-check, .fa-times {
+    background-color: #29D930;
+    color: $white-1;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+  }
+  .fa-times {
+    background-color: #FF3B30;
+    padding: 5px 7px;
+  }
+  &__text {
+    padding-left: 10px;
+    span {
+      font-size: 15px;
+      line-height: 20px;
+      font-weight: $semibold;
+      color: $black-1;
+      i {
+        display: block;
+        color:#8F8E94;
+        font-weight: $regular;
+        font-style: initial;
+        letter-spacing: -0.24px;
+      }
+    }
+    p {
+      padding-bottom: 10px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+    }
+  }
+}
+.co-success {
+  background: linear-gradient(228.44deg, #6A28FA 15.44%, #250054 85%);
+  &__header {
+    position: relative;
+    padding: 20px;
+  }
+  &__logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 41px;
+    height: 39px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__text {
+    p {
+      text-align: right;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      color: $white-1;
+      font-weight: $regular;
+    }
+  }
+  &__title {
+    padding: 14px 0 24px;
+    h5 {
+      text-align: center;
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      text-transform: uppercase;
+      font-weight: $semibold;
+      color: $white-1;
+    }
+    span {
+      display: block;
+    }
+  }
+  &__content {
+    margin: 0 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  &__box {
+    padding: 23px 20px 28px 23px;
+    border-radius: 10px;
+    background-color: $white-1;
+    border: 1px solid #D3D6E9;
+    &:first-child {
+      border-bottom: 1px dashed #D3D6E9;
+    }
+    &:last-child {
+      border-top:none;
+    }
+  }
+  &__top {
+    @include add-border(1px,#EFF0F6,bottom);
+    .checkout-top {
+      padding-bottom: 25px;
+    }
+    .checkout-title {
+      padding-bottom: 8px;
+    }
+    .checkout-location {
+      &__text {
+        padding-left: 7px;
+        span {
+          font-weight: initial;
+          color: #333333;
+        }
+      }
+    }
+  }
+  &__info {
+    padding-bottom:20px;
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      color: #555555;
+      letter-spacing: -0.24px;
+      font-weight: $regular;
+      span {
+        display: block;
+        font-size: 20px;
+        line-height: 25px;
+        color: $black-1;
+        letter-spacing: 0.38px;
+      }
+    }
+  }
+  &__middle {
+    padding-top: 25px;
+    .checkout-top {
+      &__text {
+        p {
+          font-size: 15px;
+          line-height: 24px;
+          letter-spacing: -0.24px;
+          color: #333333;
+          font-weight: $regular;
+          margin-bottom: 5px;
+        }
+      }
+      .total {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: $black-1;
+        font-weight: $semibold;
+        margin-top: 10px;
+      }
+    }
+    .checkout-title {
+      span {
+        font-weight: $regular;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: #555555;
+      }
+    }
+  }
+  &__bottom {
+    padding-top: 8px;
+    text-align: center;
+    p {
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.07px;
+      color:#555555;
+      font-weight: $regular;
+      text-transform: uppercase;
+      margin: 20px 0 5px;
+    }
+    span {
+      display: block;
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing:0.337647px;
+      color: $main-color;
+      font-weight: $bold;
+    }
+  }
+  &__history {
+    padding: 15px 0;
+    text-align: center;
+    a {
+      font-size: 16px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      color: $white-1;
+      text-decoration: underline;
+      font-weight: $regular;
     }
   }
 }
