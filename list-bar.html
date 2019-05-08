@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>9life</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-purple.png">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <main class="life-wrapper">
+      <section class="life-list">
+        <div class="list-header">
+          <div class="list-header__tab">
+            <div class="list-header__tab__group">
+              <div data-id="box-1" class="list-header__tab__item active">Listing</div>
+              <div data-id="box-2" class="list-header__tab__item">Map</div>
+            </div>
+          </div>
+          <div id="box-1" class="list-header__nav list-header__box">
+            <div class="list-nav">
+              <div class="list-nav__item active"><a>Tất cả</a></div>
+              <div class="list-nav__item"><a>Karaoke</a></div>
+              <div class="list-nav__item"><a>Bar</a></div>
+              <div class="list-nav__item"><a>Pub</a></div>
+              <div class="list-nav__item"><a>Lounge</a></div>
+            </div>
+            <div class="filter-icon"><i class="fas fa-sliders-h"></i></div>
+          </div>
+          <div id="box-2" class="list-header__map list-header__box d-none">
+            <div class="form-group">
+              <select class="form-control">
+                <option>Hà Nội</option>
+                <option>Tp. Hồ Chí Minh</option>
+                <option>Đà Nẵng</option>
+              </select>
+            </div>
+            <div class="form-group active">
+              <select class="form-control">
+                <option>Gần bạn</option>
+                <option>Xa bạn</option>
+              </select>
+            </div>
+            <div class="form-group"><a class="btn btn-purple"><i class="far fa-clock"></i>Open Now</a></div>
+          </div>
+        </div>
+        <div class="life-list__slide">
+          <p class="life-list__title">sponsored</p>
+          <div class="list-bar owl-carousel owl-theme">
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="detail-bar.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="detail-bar.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">1900</p>
+                  <p class="p2">Bar · 15m · $$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Open</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="detail-bar.html" class="bar-item__link"></a>
+              </div>
+            </div>
+            <div class="list-bar__item">
+              <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+                <div class="bar-item__sale">-50%</div>
+                <div class="bar-item__gradient"></div>
+                <div class="bar-item__content">
+                  <p class="p1">SI Cuisine & Mixology</p>
+                  <p class="p2">Lounge · 15m · $$$</p>
+                  <div class="bar-item__state">
+                    <p class="p3">Free giờ hát</p>
+                    <div class="dropdown">
+                      <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                    </div>
+                  </div>
+                </div><a href="detail-bar.html" class="bar-item__link"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="life-list__container">
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">1900</p>
+                <p class="p2">Bar · 15m · $$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Open</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">SI Cuisine & Mixology</p>
+                <p class="p2">Lounge · 15m · $$$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Free giờ hát</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">1900</p>
+                <p class="p2">Bar · 15m · $$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Open</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">SI Cuisine & Mixology</p>
+                <p class="p2">Lounge · 15m · $$$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Free giờ hát</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">1900</p>
+                <p class="p2">Bar · 15m · $$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Open</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">SI Cuisine & Mixology</p>
+                <p class="p2">Lounge · 15m · $$$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Free giờ hát</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">1900</p>
+                <p class="p2">Bar · 15m · $$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Open</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+          <div class="life-list__item">
+            <div class="bar-item"><img src="images/bar-item2.jpg" class="bar-item__img">
+              <div class="bar-item__sale">-50%</div>
+              <div class="bar-item__gradient"></div>
+              <div class="bar-item__content">
+                <p class="p1">SI Cuisine & Mixology</p>
+                <p class="p2">Lounge · 15m · $$$</p>
+                <div class="bar-item__state">
+                  <p class="p3">Free giờ hát</p>
+                  <div class="dropdown">
+                    <button type="button" data-toggle="dropdown" class="dropdown-toggle"><i class="fas fa-ellipsis-h"></i></button>
+                    <div class="dropdown-menu"><a href="#" class="dropdown-item"><i class="fas fa-heart"></i>Yêu thích</a><a href="#" class="dropdown-item"><i class="fas fa-share"></i>Chia sẻ</a></div>
+                  </div>
+                </div>
+              </div><a href="detail-bar.html" class="bar-item__link"></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script>
+      $('.list-bar').owlCarousel({
+          nav: false,
+          dots: false,
+          autoWidth: true,
+          items: 3
+      })
+    </script>
+    <script>
+      $(".list-header__tab__item").click(function () {
+          var tab_id = $(this).attr('data-id');
+      
+          $('.list-header__tab__item').removeClass('active');
+          $('.list-header__box').addClass('d-none');
+      
+          $(this).addClass('active');
+          $("#" + tab_id).removeClass('d-none');
+      
+      });
+    </script>
+  </body>
+</html>

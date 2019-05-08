@@ -1,0 +1,341 @@
+- var page = "list-bar";
+doctype html
+html(lang="vi")
+    head
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/libs/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
+        link(rel="stylesheet" href="css/styles.css")
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-list
+                .list-header
+                    .list-header__tab
+                        .list-header__tab__group
+                            .list-header__tab__item.active(data-id='box-1')
+                                | Listing
+                            .list-header__tab__item(data-id='box-2')
+                                | Map
+                    #box-1.list-header__nav.list-header__box
+                        .list-nav
+                            .list-nav__item.active
+                                a
+                                    | Tất cả
+                            .list-nav__item
+                                a
+                                    | Karaoke
+                            .list-nav__item
+                                a
+                                    | Bar
+                            .list-nav__item
+                                a
+                                    | Pub
+                            .list-nav__item
+                                a
+                                    | Lounge
+                        .filter-icon
+                            i.fas.fa-sliders-h
+
+                    #box-2.list-header__map.list-header__box.d-none
+                        .form-group
+                            select.form-control
+                                option Hà Nội
+                                option Tp. Hồ Chí Minh
+                                option Đà Nẵng
+                        .form-group.active
+                            select.form-control
+                                option Gần bạn
+                                option Xa bạn
+                        .form-group
+                            a.btn.btn-purple
+                                i.far.fa-clock
+                                | Open Now
+                .life-list__slide
+                    p.life-list__title sponsored
+                    .list-bar.owl-carousel.owl-theme
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='detail-bar.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='detail-bar.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 1900
+                                    p.p2 Bar · 15m · $$
+                                    .bar-item__state
+                                        p.p3 Open
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='detail-bar.html')
+                        .list-bar__item
+                            .bar-item
+                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__sale -50%
+                                .bar-item__gradient
+                                .bar-item__content
+                                    p.p1 SI Cuisine & Mixology
+                                    p.p2 Lounge · 15m · $$$
+                                    .bar-item__state
+                                        p.p3 Free giờ hát
+                                        .dropdown
+                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                i.fas.fa-ellipsis-h
+                                            .dropdown-menu
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-heart
+                                                    | Yêu thích
+                                                a.dropdown-item(href='#')
+                                                    i.fas.fa-share
+                                                    | Chia sẻ
+                                a.bar-item__link(href='detail-bar.html')
+
+                .life-list__container
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 1900
+                                p.p2 Bar · 15m · $$
+                                .bar-item__state
+                                    p.p3 Open
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item2.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 SI Cuisine & Mixology
+                                p.p2 Lounge · 15m · $$$
+                                .bar-item__state
+                                    p.p3 Free giờ hát
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 1900
+                                p.p2 Bar · 15m · $$
+                                .bar-item__state
+                                    p.p3 Open
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item2.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 SI Cuisine & Mixology
+                                p.p2 Lounge · 15m · $$$
+                                .bar-item__state
+                                    p.p3 Free giờ hát
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 1900
+                                p.p2 Bar · 15m · $$
+                                .bar-item__state
+                                    p.p3 Open
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item2.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 SI Cuisine & Mixology
+                                p.p2 Lounge · 15m · $$$
+                                .bar-item__state
+                                    p.p3 Free giờ hát
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 1900
+                                p.p2 Bar · 15m · $$
+                                .bar-item__state
+                                    p.p3 Open
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+                    .life-list__item
+                        .bar-item
+                            img.bar-item__img(src='images/bar-item2.jpg')
+                            .bar-item__sale -50%
+                            .bar-item__gradient
+                            .bar-item__content
+                                p.p1 SI Cuisine & Mixology
+                                p.p2 Lounge · 15m · $$$
+                                .bar-item__state
+                                    p.p3 Free giờ hát
+                                    .dropdown
+                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                            i.fas.fa-ellipsis-h
+                                        .dropdown-menu
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-heart
+                                                | Yêu thích
+                                            a.dropdown-item(href='#')
+                                                i.fas.fa-share
+                                                | Chia sẻ
+                            a.bar-item__link(href='detail-bar.html')
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $('.list-bar').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 3
+            })
+        script.
+            $(".list-header__tab__item").click(function () {
+                var tab_id = $(this).attr('data-id');
+
+                $('.list-header__tab__item').removeClass('active');
+                $('.list-header__box').addClass('d-none');
+
+                $(this).addClass('active');
+                $("#" + tab_id).removeClass('d-none');
+
+            });
+
+
+
