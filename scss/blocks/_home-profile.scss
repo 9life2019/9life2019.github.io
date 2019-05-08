@@ -1,0 +1,122 @@
+.home-profile{
+  background-color: $main-color;
+  border-radius: 10px;
+  padding: 20px 15px;
+  margin-bottom: 7px;
+  &__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  &__bottom{
+    transition: .5s;
+    &__row{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__item{
+      border-right: 1px solid #868686;
+      width: 33.333%;
+      text-align: center;
+      &:last-child{
+        border-right: none;
+      }
+      img{
+        vertical-align: middle;
+      }
+      span{
+        vertical-align: middle;
+        display: inline-block;
+        font-size: 13px;
+        line-height: 15px;
+        color: $white-1;
+        padding-left: 8px;
+        text-align: left;
+        small{
+          display: block;
+          font-size: 11px;
+          opacity: .7;
+        }
+      }
+    }
+  }
+  &__name{
+    width: calc(100% - 56px);
+    .p1{
+      font-size: 20px;
+      line-height: 25px;
+      letter-spacing: 0.38px;
+      opacity: .7;
+      color: $white-1;
+    }
+    .p2{
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0.38px;
+      color: $white-1;
+      font-weight: $bold;
+    }
+    .p3{
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      text-transform: uppercase;
+      color: #47FF43;
+      margin-top: 15px;
+      font-weight: $semibold;
+      span{
+        padding-left: 10px;
+        vertical-align: middle;
+      }
+    }
+    .p4{
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      color: #BFA2FF;
+      margin-top: 10px;
+    }
+  }
+  &__avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__info{
+    p{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: $white-1;
+      margin-bottom: 5px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      span{
+        vertical-align: middle;
+        padding-left: 10px;
+      }
+      i{
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+  &__settings{
+    text-align: right;
+    a{
+      color: #fff;
+    }
+    a:not([href]):not([tabindex]){
+      color: #fff;
+    }
+  }
+}

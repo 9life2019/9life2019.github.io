@@ -9,20 +9,6 @@
     font-weight: $semibold;
   }
 }
-.login-header{
-  text-align: center;
-  &__logo{
-    padding-top: 30px;
-  }
-  &__text{
-    padding: 20px 0 50px;
-    p{
-      font-size: 17px;
-      line-height: 22px;
-      font-weight: $semibold;
-    }
-  }
-}
 .login-title{
   font-size: 22px;
   line-height: 28px;

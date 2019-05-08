@@ -1,0 +1,101 @@
+.life-wrapper{
+  transition: transform .5s;
+}
+.life-menu{
+  background-color: #F7FAFE;
+  height: 100%;
+  width:calc(100% - 50px);
+  position:fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index:99;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transition:.5s;
+  visibility: hidden;
+  transform: translateX(-100%);
+  &__profile{
+    .home-profile{
+      border-radius: 0;
+      background: linear-gradient(209.76deg, #6A28FA -11.06%, #250054 82.15%);
+      margin-bottom: 0;
+      &__top{
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__nav{
+    ul{
+      margin-bottom: 8px;
+      li{
+        padding-left: 15px;
+        background-color: #fff;
+        a{
+          padding: 19px 15px 19px 0;
+          font-size: 17px;
+          line-height: 22px;
+          letter-spacing: -0.41px;
+          color: #000000;
+          display:flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          &:active{
+            background-color: #F7FAFE;
+          }
+          p{
+            img,span{
+              vertical-align: middle;
+            }
+            span{
+              padding-left: 15px;
+            }
+          }
+          i{
+            color: #C7C7CC;
+            font-size: 14px;
+          }
+        }
+        a:not([href]):not([tabindex]){
+          color: #000;
+        }
+        &:last-child{
+          border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+          a{
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}
+.life-backdrop{
+  width: 50px;
+  background-color: rgba(0,0,0,.6);
+  position: fixed;
+  top: 0;
+  right:1px;
+  bottom: 0;
+  z-index:100;
+  transition:.5s;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,.75);
+  transform: translateX(100%);
+}
+.open-menu{
+  overflow: hidden;
+  .life-wrapper{
+    transform: translateX(270px);
+  }
+  .life-menu{
+    visibility: visible;
+    transform: translateX(0);
+  }
+  .life-backdrop{
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

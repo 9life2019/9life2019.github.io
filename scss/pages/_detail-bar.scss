@@ -1,21 +1,109 @@
-.detail-header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 20px 15px;
-  &__back{
-    background-color: #FFEA31;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    display: block;
-    text-align: center;
-    line-height: 30px;
+.detail-title{
+  margin-bottom: 20px;
+  h4{
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.38px;
     color: #000;
-    &:active,
-    &:focus{
-      color:#fff;
+    font-weight: $bold;
+    span{
+      padding-left: 10px;
+      vertical-align: text-bottom;
+    }
+  }
+}
+.list-group{
+  margin-bottom: 20px;
+  padding: 0 15px;
+  &__item{
+    padding: 15px 0;
+    border-bottom:1px solid #D3D6E9 ;
+  }
+  &__title{
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.07px;
+    text-transform: uppercase;
+    color: $main-color;
+    font-weight: $semibold;
+    margin-bottom: 5px;
+  }
+  &__text{
+    display: flex;
+    span{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #333;
+      font-weight: $semibold;
+      padding-left: 10px;
+    }
+    .fa-music{
+      color:#370B7F;
+    }
+    .fa-check-circle{
+      color: #29D930;
+    }
+    .fa-times-circle{
+      color: #FF3B30;
+    }
+  }
+}
+.view-360{
+  padding-left: 15px;
+  margin-bottom: 30px;
+  &__slide{
+    &__item{
+      padding: 0 5px;
+      .item-360{
+        width: 333px;
+        height: 250px;
+        border-radius:10px;
+        overflow: hidden;
+        > img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+    }
+  }
+}
+.view-map{
+  padding: 0 15px;
+  margin-bottom: 30px;
+  &__iframe{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    iframe{
+      width: 100%;
+      height: 150px;
+    }
+  }
+  &__tab{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    &__item{
+      width: 50%;
+      text-align: center;
+      background-color: $main-color;
+      padding: 13px 0;
+      border-right: 1px solid  rgba(255, 255, 255, 0.2);
+      &:last-child{
+        border-right: none;
+      }
+      span,img{
+        vertical-align: middle;
+      }
+      span{
+        color: #fff;
+        padding-left: 10px;
+      }
     }
   }
 }
@@ -45,6 +133,74 @@
     }
   }
   &__events{}
-  &__booking{}
+  &__booking{
+    .list-offers{
+      padding: 0;
+      &__item{
+        padding: 0 15px 20px;
+        .life-card{
+          width: 100%;
+        }
+      }
+    }
+  }
   &__info{}
+  &__relate{
+    margin-bottom: 30px;
+  }
+}
+.life-gallery{
+  padding: 0 15px;
+  margin-bottom: 30px;
+  &__content{
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+  }
+  &__left{
+    width: 50%;
+  }
+  &__right{
+    width: 50%;
+    .life-gallery__item{
+      height: 50%;
+    }
+  }
+  &__item{
+    width: 100%;
+    height: 100%;
+    padding: 1.5px;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.view-social{
+  padding: 0 15px;
+  margin-bottom: 30px;
+  &__group{}
+  &__item{
+    background: #FFFFFF;
+    border: 1px solid #D3D6E9;
+    display: block;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    span{
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      color: #8F8E94;
+      padding-left: 15px;
+      vertical-align: middle;
+    }
+    img{
+      vertical-align: middle;
+    }
+  }
 }

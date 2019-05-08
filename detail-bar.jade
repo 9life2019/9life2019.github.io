@@ -14,6 +14,70 @@ html(lang="vi")
         link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
         link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
+        section.life-menu
+            .life-menu__profile
+                .home-profile
+                    .home-profile__settings
+                        a
+                            i.fas.fa-cog
+                    .home-profile__top
+                        .home-profile__name
+                            p.p2 Jason Chen
+                            p.p4 0912 345 678
+                        .home-profile__avatar
+                            img(src='images/home-avatar.png')
+            .life-menu__nav
+                ul
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-booking.svg')
+                                span Booking
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-ticket.svg')
+                                span Ticket
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-fav.svg')
+                                span Quán yêu thích
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-voucher.svg')
+                                span Voucher
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-reward.svg')
+                                span Earn Rewards
+                            i.fas.fa-chevron-right
+                ul
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-lang.svg')
+                                span Language / Currency
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-help.svg')
+                                span Help Center
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-about.svg')
+                                span About
+                            i.fas.fa-chevron-right
+        .life-backdrop
         main.life-wrapper
             section.life-detail
                 .detail-bar
@@ -36,7 +100,7 @@ html(lang="vi")
                                     p.p1 BAR
                                     p.p2 1900
                                     p.p3
-                                        img(src='images/i-cup.svg')
+                                        i.fas.fa.fa-glass-martini
                                         span available booking · $$$
                                 .home-profile__avatar
                                     img(src='images/bar-logo.jpg')
@@ -103,12 +167,285 @@ html(lang="vi")
                     .detail-bar__booking
                         .home-title
                             h3 Booking Menu
-
+                        .list-offers
+                            .list-offers__item
+                                .life-card
+                                    .life-card__img
+                                        img(src='images/offers-banner.jpg')
+                                        .life-card__sale -30%
+                                        .life-card__gradient
+                                        .life-card__badge
+                                            .badge.badge_red
+                                                i.fas.fa-circle
+                                                | hot deal
+                                            .badge.badge_yellow
+                                                i.fas.fa-circle
+                                                | 129 booked
+                                    .life-card__content
+                                        p.life-card__name Luxury Package
+                                        p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        p.life-card__address
+                                            i.fas.fa-map-marker-alt
+                                            span 1900 Nightclub · 15m
+                                        .life-card__bottom
+                                            .life-card__price
+                                                p 1.200.000đ
+                                                strike 2.400.000đ
+                                            .life-card__btn
+                                                a.btn.btn-purple.btn-round(href='#') MUA
+                            .list-offers__item
+                                .life-card
+                                    .life-card__img
+                                        img(src='images/offers-banner.jpg')
+                                        .life-card__sale -30%
+                                        .life-card__gradient
+                                        .life-card__badge
+                                            .badge.badge_red
+                                                i.fas.fa-circle
+                                                | hot deal
+                                            .badge.badge_yellow
+                                                i.fas.fa-circle
+                                                | 129 booked
+                                    .life-card__content
+                                        p.life-card__name Luxury Package
+                                        p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        p.life-card__address
+                                            i.fas.fa-map-marker-alt
+                                            span 1900 Nightclub · 15m
+                                        .life-card__bottom
+                                            .life-card__price
+                                                p 1.200.000đ
+                                                strike 2.400.000đ
+                                            .life-card__btn
+                                                a.btn.btn-purple.btn-round(href='#') MUA
+                            .list-offers__item
+                                .life-card
+                                    .life-card__img
+                                        img(src='images/offers-banner.jpg')
+                                        .life-card__sale -30%
+                                        .life-card__gradient
+                                        .life-card__badge
+                                            .badge.badge_red
+                                                i.fas.fa-circle
+                                                | hot deal
+                                            .badge.badge_yellow
+                                                i.fas.fa-circle
+                                                | 129 booked
+                                    .life-card__content
+                                        p.life-card__name Luxury Package
+                                        p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        p.life-card__address
+                                            i.fas.fa-map-marker-alt
+                                            span 1900 Nightclub · 15m
+                                        .life-card__bottom
+                                            .life-card__price
+                                                p 1.200.000đ
+                                                strike 2.400.000đ
+                                            .life-card__btn
+                                                a.btn.btn-purple.btn-round(href='#') MUA
+                            .list-offers__item
+                                .life-card
+                                    .life-card__img
+                                        img(src='images/offers-banner.jpg')
+                                        .life-card__sale -30%
+                                        .life-card__gradient
+                                        .life-card__badge
+                                            .badge.badge_red
+                                                i.fas.fa-circle
+                                                | hot deal
+                                            .badge.badge_yellow
+                                                i.fas.fa-circle
+                                                | 129 booked
+                                    .life-card__content
+                                        p.life-card__name Luxury Package
+                                        p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        p.life-card__address
+                                            i.fas.fa-map-marker-alt
+                                            span 1900 Nightclub · 15m
+                                        .life-card__bottom
+                                            .life-card__price
+                                                p 1.200.000đ
+                                                strike 2.400.000đ
+                                            .life-card__btn
+                                                a.btn.btn-purple.btn-round(href='#') MUA
                     .detail-bar__info
+                        .home-title
+                            h3 Information
+                        .list-group
+                            .list-group__item
+                                .list-group__title Music type
+                                .list-group__text
+                                    i.fas.fa-music
+                                    span EDM, Future Bass, Future House...
+                            .list-group__item
+                                .list-group__title What you can wear
+                                .list-group__text
+                                    i.fas.fa-check-circle
+                                    span Dress Shoes, Dress Shirts
+
+                            .list-group__item
+                                .list-group__title What you can’t wear
+                                .list-group__text
+                                    i.fas.fa-times-circle
+                                    span Shorts, Flip Flops
+                        .view-360
+                            .detail-title
+                                h4
+                                    img(src='images/i-360.svg')
+                                    span 360&#176; View
+                            .view-360__slide.owl-carousel.owl-theme
+                                .view-360__slide__item
+                                    .item-360
+                                        img(src='images/bar-banner.jpg')
+                                .view-360__slide__item
+                                    .item-360
+                                        img(src='images/bar-banner.jpg')
+                                .view-360__slide__item
+                                    .item-360
+                                        img(src='images/bar-banner.jpg')
+                                .view-360__slide__item
+                                    .item-360
+                                        img(src='images/bar-banner.jpg')
+                        .view-map
+                            .detail-title
+                                h4
+                                    img(src='images/i-map.svg')
+                                    span Map
+                            .view-map__content
+                                .view-map__iframe
+                                    iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.9396084366467!2d105.84974741404599!3d21.035102285994878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abbf5c6e7ce3%3A0xcfa017611623993c!2s1900+Club+Hanoi!5e0!3m2!1sen!2s!4v1557236876952!5m2!1sen!2s' allowfullscreen='')
+                                .view-map__tab
+                                    .view-map__tab__item
+                                        img(src='images/i-show-map.svg')
+                                        span Xem bản đồ
+                                    .view-map__tab__item
+                                        img(src='images/i-direct.svg')
+                                        span Chỉ đường
+                        .life-gallery
+                            .detail-title
+                                h4
+                                    img(src='images/i-photo.svg')
+                                    span Photos
+                            .life-gallery__content
+                                .life-gallery__left
+                                    .life-gallery__item
+                                        img(src='images/gallery-1.jpg')
+                                .life-gallery__right
+                                    .life-gallery__item
+                                        img(src='images/gallery-2.jpg')
+                                    .life-gallery__item
+                                        img(src='images/gallery-3.jpg')
+                        .view-social
+                            .detail-title
+                                h4
+                                    img(src='images/i-social.svg')
+                                    span Social
+                            .view-social__group
+                                a.view-social__item
+                                    img(src='images/i-fb.svg')
+                                    span facebook.com/1900.hn
+                                a.view-social__item
+                                    img(src='images/i-insta.svg')
+                                    span instagram.com/1900.hn
+                    .detail-bar__relate
+                        .home-title
+                            h3 Relate
+                        .list-bar.owl-carousel.owl-theme
+                            .list-bar__item
+                                .bar-item
+                                    img.bar-item__img(src='images/bar-item.jpg')
+                                    .bar-item__sale -50%
+                                    .bar-item__gradient
+                                    .bar-item__content
+                                        p.p1 1900
+                                        p.p2 Bar · 15m · $$
+                                        .bar-item__state
+                                            p.p3 Open
+                                            .dropdown
+                                                button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                    i.fas.fa-ellipsis-h
+                                                .dropdown-menu
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-heart
+                                                        | Yêu thích
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-share
+                                                        | Chia sẻ
+                                    a.bar-item__link(href='detail-bar.html')
+                            .list-bar__item
+                                .bar-item
+                                    img.bar-item__img(src='images/bar-item2.jpg')
+                                    .bar-item__sale -50%
+                                    .bar-item__gradient
+                                    .bar-item__content
+                                        p.p1 SI Cuisine & Mixology
+                                        p.p2 Lounge · 15m · $$$
+                                        .bar-item__state
+                                            p.p3 Free giờ hát
+                                            .dropdown
+                                                button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                    i.fas.fa-ellipsis-h
+                                                .dropdown-menu
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-heart
+                                                        | Yêu thích
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-share
+                                                        | Chia sẻ
+                                    a.bar-item__link(href='detail-bar.html')
+                            .list-bar__item
+                                .bar-item
+                                    img.bar-item__img(src='images/bar-item.jpg')
+                                    .bar-item__sale -50%
+                                    .bar-item__gradient
+                                    .bar-item__content
+                                        p.p1 1900
+                                        p.p2 Bar · 15m · $$
+                                        .bar-item__state
+                                            p.p3 Open
+                                            .dropdown
+                                                button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                    i.fas.fa-ellipsis-h
+                                                .dropdown-menu
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-heart
+                                                        | Yêu thích
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-share
+                                                        | Chia sẻ
+                                    a.bar-item__link(href='detail-bar.html')
+                            .list-bar__item
+                                .bar-item
+                                    img.bar-item__img(src='images/bar-item2.jpg')
+                                    .bar-item__sale -50%
+                                    .bar-item__gradient
+                                    .bar-item__content
+                                        p.p1 SI Cuisine & Mixology
+                                        p.p2 Lounge · 15m · $$$
+                                        .bar-item__state
+                                            p.p3 Free giờ hát
+                                            .dropdown
+                                                button.dropdown-toggle(type='button' data-toggle='dropdown')
+                                                    i.fas.fa-ellipsis-h
+                                                .dropdown-menu
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-heart
+                                                        | Yêu thích
+                                                    a.dropdown-item(href='#')
+                                                        i.fas.fa-share
+                                                        | Chia sẻ
+                                    a.bar-item__link(href='detail-bar.html')
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
         script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $('.list-bar').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 3
+            })
         script.
             $('.list-events').owlCarousel({
                 nav: false,
@@ -116,6 +453,20 @@ html(lang="vi")
                 autoWidth: true,
                 items: 2
             })
+        script.
+            $('.view-360__slide').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 2
+            })
+        script.
+            $(".btn-menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
 
 
 
