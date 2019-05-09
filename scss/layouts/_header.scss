@@ -192,3 +192,33 @@
     }
   }
 }
+
+.booking-header{
+  position: relative;
+  background-color: #fff;
+  &__back{
+    a{
+      color: $main-color;
+      display: inline-block;
+      padding: 15px;
+      font-size: 17px;
+      line-height: 22px;
+    }
+    a:not([href]):not([tabindex]){
+      color: $main-color;
+    }
+  }
+  &__title{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    p{
+      font-size: 17px;
+      line-height: 22px;
+      letter-spacing: -0.41px;
+      color: #000000;
+      font-weight: $semibold;
+    }
+  }
+}

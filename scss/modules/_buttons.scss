@@ -27,3 +27,8 @@
 .btn-round{
   border-radius: 60px;
 }
+.btn-outline{
+  background-color: #fff;
+  border:1px solid $main-color;
+  color: $main-color;
+}
