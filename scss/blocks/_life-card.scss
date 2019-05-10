@@ -70,15 +70,12 @@
   }
   &__address{
     display: flex;
-    i{
-      color: $main-color;
-      margin-right: 5px;
-    }
     span{
       font-size: 15px;
       line-height: 20px;
       letter-spacing: -0.24px;
       color: #555;
+      padding-left: 5px;
     }
   }
   &__bottom{
@@ -121,6 +118,13 @@
     }
     .life-card{
       width: 330px;
+    }
+  }
+  &.owl-carousel{
+    .owl-item{
+      img{
+        width: auto;
+      }
     }
   }
 }
