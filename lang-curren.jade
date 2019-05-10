@@ -1,0 +1,67 @@
+- var page = "lang-curren";
+doctype html
+html(lang="vi")
+    head
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/styles.css")
+
+    body(ontouchstart='')
+        main.life-wrapper
+            section.life-booking
+                .booking-header
+                    .booking-header__back
+                        a
+                            i.fas.fa-chevron-left
+                    .booking-header__title
+                        p Language / Currency
+                .lang-curren
+                    .lang-curren__lang
+                        p.lang-curren__title
+                            img(src='images/i-title-lang.svg')
+                            span Language
+                        ul.lang-curren__list
+                            li.active
+                                a
+                                    | Tiếng Việt
+
+                            li
+                                a
+                                    | English
+
+                            li
+                                a
+                                    | Korean
+
+                    .lang-curren__curren
+                        p.lang-curren__title
+                            img(src='images/i-title-curren.svg')
+                            span Currency
+                        ul.lang-curren__list
+                            li.active
+                                a
+                                    | Vietnam Dong (đ)
+
+                            li
+                                a
+                                    | US Dollar (USD)
+
+                            li
+                                a
+                                    | Korean (KRW)
+
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+
+
+
+
+
+
