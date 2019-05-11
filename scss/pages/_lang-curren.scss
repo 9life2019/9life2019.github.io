@@ -1,0 +1,56 @@
+.lang-curren{
+  margin: 20px 0;
+  &__lang{}
+  &__curren{}
+  &__title{
+    padding:0 15px 15px 15px;
+    span{
+      font-size: 20px;
+      line-height: 28px;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: $semibold;
+      padding-left: 10px;
+    }
+  }
+  &__list{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    li{
+      padding-left: 15px;
+      background-color:#fff;
+      a{
+        display: block;
+        padding: 19px 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+        color: #000000;
+        &:active{
+          background-color: #F7FAFE;
+        }
+      }
+      &:last-child{
+        a{
+          border-bottom: none;
+        }
+      }
+      &.active{
+        a{
+          color: $main-color;
+          &:after{
+            content: '';
+            width: 17px;
+            height: 13px;
+            display: inline-block;
+            float: right;
+            background: url("../images/i-check.svg") no-repeat right center;
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+  }
+}

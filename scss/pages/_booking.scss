@@ -1,112 +1,3 @@
-.booking-item{
-  margin-bottom: 20px;
-  &__top{
-    background-color: #fff;
-    border: 1px solid #D3D6E9;
-    border-radius: 10px ;
-    padding:15px;
-    border-bottom-style: dashed;
-  }
-  &__bottom{
-    background-color: #fff;
-    border: 1px solid #D3D6E9;
-    border-radius: 10px;
-    padding:15px;
-    border-top: none;
-    text-align: center;
-    p{
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing: 0.3px;
-      color: $main-color;
-      font-weight: $bold;
-    }
-    .used{
-      color: #8F8E94;
-    }
-    .btn{
-      width: 100%;
-      background-color: #EFF0F6;
-      color: #FF736B;
-      &:not([href]):not([tabindex]){
-        color: #FF736B;
-      }
-    }
-  }
-  &__info{
-    display: flex;
-    justify-content: space-between;
-    .p1{
-      font-size: 20px;
-      line-height: 25px;
-      letter-spacing: 0.38px;
-      color: #000;
-      font-weight: $bold;
-      margin-bottom: 6px;
-    }
-    .p2{
-      display: flex;
-      span{
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: -0.24px;
-        color: #333333;
-        padding-left: 7px;
-      }
-      i{
-        color: $main-color;
-      }
-    }
-  }
-  &__detail{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .detail-right{
-      .btn{
-        font-size: 13px;
-        line-height: 15px;
-        font-weight: $regular;
-        text-transform: initial;
-        padding: 7px;
-        width: 80px;
-        img{
-          margin-right: 5px;
-          vertical-align: middle;
-        }
-      }
-    }
-    p{
-      font-size: 15px;
-      line-height: 20px;
-      letter-spacing: -0.24px;
-      color: #000;
-      font-weight: $semibold;
-    }
-  }
-  &__name{
-    width: calc(100% - 80px);
-    padding-right: 10px;
-  }
-  &__img{
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    overflow: hidden;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
-  &__time{
-    margin-top: 10px;
-    .p3{
-      color: #333333;
-      font-weight: $regular;
-    }
-  }
-}
 .list-booking{
   margin: 20px 0;
   &__title{
@@ -118,5 +9,11 @@
     font-weight: $semibold;
     text-align: center;
     margin-bottom: 10px;
+  }
+}
+.detail-booking{
+  margin: 20px 0;
+  .view-map{
+    padding: 0;
   }
 }
