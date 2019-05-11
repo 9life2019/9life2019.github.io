@@ -1,0 +1,348 @@
+- var page = "detail-event";
+doctype html
+html(lang="vi")
+    head
+        title 9life
+        meta(charset="utf-8")
+        meta(http-equiv="x-ua-compatible" content="ie=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
+        meta(name='format-detection', content='telephone=no')
+        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
+
+        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
+        link(rel="stylesheet" href="css/libs/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
+        link(rel="stylesheet" href="css/styles.css")
+    body(ontouchstart='')
+        section.life-menu
+            .life-menu__profile
+                .home-profile
+                    .home-profile__settings
+                        a
+                            i.fas.fa-cog
+                    .home-profile__top
+                        .home-profile__name
+                            p.p2 Jason Chen
+                            p.p4 0912 345 678
+                        .home-profile__avatar
+                            img(src='images/home-avatar.png')
+            .life-menu__nav
+                ul
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-booking.svg')
+                                span Booking
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-ticket.svg')
+                                span Ticket
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-fav.svg')
+                                span Quán yêu thích
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-voucher.svg')
+                                span Voucher
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-reward.svg')
+                                span Earn Rewards
+                            i.fas.fa-chevron-right
+                ul
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-lang.svg')
+                                span Language / Currency
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-help.svg')
+                                span Help Center
+                            i.fas.fa-chevron-right
+                    li
+                        a
+                            p
+                                img(src='images/menu/i-menu-about.svg')
+                                span About
+                            i.fas.fa-chevron-right
+        .life-backdrop
+        #lifePopup.modal.fade
+            .modal-dialog.life-popup
+                .modal-content
+                    .modal-header
+                        .life-popup__panagation
+                            span.active
+                            span
+                            span
+                            span
+                            span
+                        button.close(type='button', data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                        .life-popup__detail
+                            .home-title
+                                h3 Luxury Package
+                            .list-offers.owl-carousel.owl-theme
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_green
+                                                    i.fas.fa-circle
+                                                    | Best Offer
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | -30%
+                                        .life-card__content
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                        .life-card__benefit
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Khách được đi cửa riêng
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đã bao gồm tất cả các chi phí
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đảm bảo giữ chỗ đến 11h
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_green
+                                                    i.fas.fa-circle
+                                                    | Best Offer
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | -30%
+                                        .life-card__content
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                        .life-card__benefit
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Khách được đi cửa riêng
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đã bao gồm tất cả các chi phí
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đảm bảo giữ chỗ đến 11h
+
+
+                            .life-popup__info
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                                .popup-amount
+                                    p Hoa Quả
+                                    span 2
+                                .popup-amount
+                                    p Bàn đặt giữ chỗ
+                                    span 4
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                                .popup-amount
+                                    p Khăn giấy
+                                    span 2
+                                .popup-amount
+                                    p Hoa quả
+                                    span 3
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                    .modal-footer
+                        .checkout-btn
+                            a(href="co-payment.html") Đặt mua
+
+        main.life-wrapper
+            section.life-event
+                .detail-event
+                    .detail-header
+                        .detail-header__left
+                            a.detail-header__back(href='detail-bar.html')
+                                i.fa.fa-chevron-left
+                        .detail-header__center
+                            .detail-header__logo
+                                img(src="images/bar-logo.jpg")
+                            .detail-header__text
+                                p 1900 NightClub
+                                    span Bar
+                        .detail-header__right
+                            .icon-round
+                                .icon-round__item.btn-menu
+                                    i.fas.fa-ellipsis-h
+                    .detail-event__banner
+                        img(src='images/event-banner.jpg')
+                    .detail-event__content
+                        .container
+                            .detail-event__info
+                                .detail-event__time
+                                    img(src="images/i-calendar.svg")
+                                    p Ngày mai, 25 tháng 3
+                                p.name Buffet Drinks Party:
+                                    span BRay & Pharreal Phuong
+                                p.hour 21:00 - 2:00
+                            .detail-event__address
+                                img(src="images/i-address.svg")
+                                span 1900 Nightclub
+                            .detail-event__intro
+                                p 💋💃🏻 Mở màn cho Buffet Drinks Party dành cho các nàng vào thứ 3 hàng tuần tại 1900 LE THÉÂTRE là bữa tiệc âm nhạc hết nấc cùng 2 anh chàng điển trai: rapper B Ray chủ nhân của loạt hit như "Con Trai Cưng", "Ex's Hate Me" và DJ/Nhà sản xuất tài năng Pharreal Phuong vào thứ 3, 26/3 ✨💝
+                                    span Xem thêm
+                        .detail-event__booking
+                            .home-title
+                                h3 Booking Menu
+                            .list-offers.owl-carousel.owl-theme
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__sale -30%
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_red
+                                                    i.fas.fa-circle
+                                                    | hot deal
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | 129 booked
+                                        .life-card__content
+                                            p.life-card__name Luxury Package
+                                            p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            p.life-card__address
+                                                img(src='images/i-address.svg')
+                                                span 1900 Nightclub · 15m
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                                .life-card__btn
+                                                    a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#lifePopup") MUA
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__sale -30%
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_red
+                                                    i.fas.fa-circle
+                                                    | hot deal
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | 129 booked
+                                        .life-card__content
+                                            p.life-card__name Luxury Package
+                                            p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            p.life-card__address
+                                                img(src='images/i-address.svg')
+                                                span 1900 Nightclub · 15m
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                                .life-card__btn
+                                                    a.btn.btn-purple.btn-round(href='#') MUA
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__sale -30%
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_red
+                                                    i.fas.fa-circle
+                                                    | hot deal
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | 129 booked
+                                        .life-card__content
+                                            p.life-card__name Luxury Package
+                                            p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            p.life-card__address
+                                                img(src='images/i-address.svg')
+                                                span 1900 Nightclub · 15m
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                                .life-card__btn
+                                                    a.btn.btn-purple.btn-round(href='#') MUA
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__sale -30%
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_red
+                                                    i.fas.fa-circle
+                                                    | hot deal
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | 129 booked
+                                        .life-card__content
+                                            p.life-card__name Luxury Package
+                                            p.life-card__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            p.life-card__address
+                                                img(src='images/i-address.svg')
+                                                span 1900 Nightclub · 15m
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                                .life-card__btn
+                                                    a.btn.btn-purple.btn-round(href='#') MUA
+        script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
+        script(type='text/javascript' src="js/popper.min.js")
+        script(type='text/javascript' src="js/bootstrap.min.js")
+        script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $('.list-offers').owlCarousel({
+                nav: false,
+                dots: false,
+                autoWidth: true,
+                items: 2
+            })
+        script.
+            $(".btn-menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
+

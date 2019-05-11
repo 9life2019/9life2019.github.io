@@ -50,6 +50,130 @@
       </div>
     </section>
     <div class="life-backdrop"></div>
+    <div id="lifePopup" class="modal fade">
+      <div class="modal-dialog life-popup">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="life-popup__panagation"><span class="active"></span><span></span><span></span><span></span><span></span></div>
+            <button type="button" data-dismiss="modal" class="close">×</button>
+          </div>
+          <!-- Modal body-->
+          <div class="modal-body">
+            <div class="life-popup__detail">
+              <div class="home-title">
+                <h3>Luxury Package</h3>
+              </div>
+              <div class="list-offers owl-carousel owl-theme">
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_green"><i class="fas fa-circle"></i>Best Offer</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>-30%</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="life-card__benefit">
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Khách được đi cửa riêng</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đã bao gồm tất cả các chi phí</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đảm bảo giữ chỗ đến 11h</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_green"><i class="fas fa-circle"></i>Best Offer</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>-30%</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="life-card__benefit">
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Khách được đi cửa riêng</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đã bao gồm tất cả các chi phí</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đảm bảo giữ chỗ đến 11h</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="life-popup__info">
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Hoa Quả</p><span>2</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Bàn đặt giữ chỗ</p><span>4</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Khăn giấy</p><span>2</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Hoa quả</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="checkout-btn"><a href="co-payment.html">Đặt mua</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <main class="life-wrapper">
       <section class="life-detail">
         <div class="detail-bar">
@@ -138,7 +262,7 @@
                         <p>1.200.000đ</p>
                         <strike>2.400.000đ</strike>
                       </div>
-                      <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      <div class="life-card__btn"><a href="#" data-toggle="modal" data-target="#lifePopup" class="btn btn-purple btn-round">MUA</a></div>
                     </div>
                   </div>
                 </div>
@@ -162,7 +286,7 @@
                         <p>1.200.000đ</p>
                         <strike>2.400.000đ</strike>
                       </div>
-                      <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      <div class="life-card__btn"><a href="#" data-toggle="modal" data-target="#lifePopup" class="btn btn-purple btn-round">MUA</a></div>
                     </div>
                   </div>
                 </div>
@@ -186,7 +310,7 @@
                         <p>1.200.000đ</p>
                         <strike>2.400.000đ</strike>
                       </div>
-                      <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      <div class="life-card__btn"><a href="#" data-toggle="modal" data-target="#lifePopup" class="btn btn-purple btn-round">MUA</a></div>
                     </div>
                   </div>
                 </div>
@@ -210,7 +334,7 @@
                         <p>1.200.000đ</p>
                         <strike>2.400.000đ</strike>
                       </div>
-                      <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      <div class="life-card__btn"><a href="#" data-toggle="modal" data-target="#lifePopup" class="btn btn-purple btn-round">MUA</a></div>
                     </div>
                   </div>
                 </div>
