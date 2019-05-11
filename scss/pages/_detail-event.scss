@@ -1,0 +1,215 @@
+.detail-event {
+  .detail-header {
+    padding: 15px;
+    &__left{
+      a {
+        background-color: transparent;
+        border: none;
+        color: $main-color;
+        width: auto;
+        height: auto;
+        font-size: 17px;
+        padding-right: 20px;
+      }
+    }
+    &__center {
+      flex:1 1 auto;
+      display: flex;
+    }
+    &__right {
+      .fa-ellipsis-h {
+        color: $black-1;
+      }
+    }
+    &__logo {
+      width: 40px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__text {
+      padding-left: 10px;
+      p {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: #000;
+        font-weight: $semibold;
+        span {
+          display: block;
+          font-size: 13px;
+          line-height: 15px;
+          letter-spacing: -0.08px;
+          color: #8F8E94;
+        }
+      }
+    }
+  }
+  &__banner {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  &__info {
+    text-align: center;
+    padding:15px 0;
+    .name {
+      font-size: 28px;
+      line-height: 30px;
+      letter-spacing: 0.34px;
+      font-weight: $bold;
+      color: $black-1;
+      span {display: block;}
+      padding-bottom: 12px;
+    }
+    .hour {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color:#6F6F6F;
+    }
+  }
+  &__time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 7px;
+    p {
+      padding-left: 10px;
+      text-transform: uppercase;
+      font-size: 16px;
+      line-height: 22px;
+      color: $black-1;
+      font-weight: $semibold;
+    }
+  }
+  &__address {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #D3D6E9;
+    border-radius:6px;
+    margin-bottom: 20px;
+    span {
+      display: inline-block;
+      font-size: 17px;
+      line-height: 22px;
+      color: $black-1;
+      letter-spacing: -0.41px;
+      padding-left: 7px;
+    }
+  }
+  &__intro {
+    p {
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: $black-1;
+      span {
+        color: $main-color;
+        font-weight: $bold;
+        cursor: pointer;
+        padding-left: 5px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  &__booking{
+    .list-offers{
+      padding: 0;
+      display: flex;
+      overflow-x: auto;
+      &__item{
+        padding: 0 15px 20px;
+      }
+    }
+  }
+}
+.life-popup {
+  margin: 30px 0 0;
+  .modal-header {align-items: center;position: relative;padding: 8px 20px;}
+  .modal-content {border-radius: 15px 15px 0 0;height: 100vh;overflow: hidden;}
+  .modal-body {padding: 0;overflow-y: auto;}
+  .modal-footer {border-top:none;display: initial;box-shadow: inset 0px 0.5px 0px #CCCCCC;padding: 15px 15px 44px; }
+  .close {
+    &:focus {
+      outline: none;
+    }
+    &:active {
+      color: $main-color;
+    }
+  }
+  &__panagation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    span {
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      margin-right: 8px;
+      &:last-child{
+        margin: 0;
+      }
+      &.active {
+        background-color: $main-color;
+      }
+    }
+  }
+  &__detail {
+    .list-offers{
+      padding: 0;
+      display: flex;
+      overflow-x: auto;
+      border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+      &__item{
+        padding: 0 15px 20px;
+      }
+    }
+    .home-title {
+      margin: 10px 0 20px 0;
+    }
+    .life-card {
+      border: none;
+    }
+  }
+  &__info {
+    padding: 0 15px 20px;
+  }
+}
+.popup-amount {
+  background: rgba(255, 255, 255, 0.92);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  backdrop-filter: blur(27.1828px);
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+  p, span {
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    color: #000000;
+  }
+  span {
+    color: #8F8E94;
+  }
+}

@@ -110,25 +110,6 @@
       }
     }
   }
-  &__btn {
-    background-color: $main-color;
-    border-radius: 6px;
-    a {
-      display: block;
-      width: 100%;
-      padding: 14px 0;
-      text-align: center;
-      color: $white-1;
-      text-transform: uppercase;
-      font-weight: $semibold;
-      font-size: 17px;
-      line-height: 22px;
-      letter-spacing: -0.41px;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  }
 }
 .checkout-top {
   display: flex;
@@ -189,6 +170,25 @@
       font-size: 15px;
       line-height: 20px;
       letter-spacing: -0.24px;
+    }
+  }
+}
+.checkout-btn {
+  background-color: $main-color;
+  border-radius: 6px;
+  a {
+    display: block;
+    width: 100%;
+    padding: 14px 0;
+    text-align: center;
+    color: $white-1;
+    text-transform: uppercase;
+    font-weight: $semibold;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.41px;
+    &:hover {
+      text-decoration: none;
     }
   }
 }

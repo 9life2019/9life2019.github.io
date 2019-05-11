@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>9life</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo-purple.png">
+    <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ontouchstart="">
+    <section class="life-menu">
+      <div class="life-menu__profile">
+        <div class="home-profile">
+          <div class="home-profile__settings"><a><i class="fas fa-cog"></i></a></div>
+          <div class="home-profile__top">
+            <div class="home-profile__name">
+              <p class="p2">Jason Chen</p>
+              <p class="p4">0912 345 678</p>
+            </div>
+            <div class="home-profile__avatar"><img src="images/home-avatar.png"></div>
+          </div>
+        </div>
+      </div>
+      <div class="life-menu__nav">
+        <ul>
+          <li><a>
+              <p><img src="images/menu/i-menu-booking.svg"><span>Booking</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-ticket.svg"><span>Ticket</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-fav.svg"><span>Quán yêu thích</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-voucher.svg"><span>Voucher</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-reward.svg"><span>Earn Rewards</span></p><i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+        <ul>
+          <li><a>
+              <p><img src="images/menu/i-menu-lang.svg"><span>Language / Currency</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-help.svg"><span>Help Center</span></p><i class="fas fa-chevron-right"></i></a></li>
+          <li><a>
+              <p><img src="images/menu/i-menu-about.svg"><span>About</span></p><i class="fas fa-chevron-right"></i></a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="life-backdrop"></div>
+    <div id="lifePopup" class="modal fade">
+      <div class="modal-dialog life-popup">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="life-popup__panagation"><span class="active"></span><span></span><span></span><span></span><span></span></div>
+            <button type="button" data-dismiss="modal" class="close">×</button>
+          </div>
+          <!-- Modal body-->
+          <div class="modal-body">
+            <div class="life-popup__detail">
+              <div class="home-title">
+                <h3>Luxury Package</h3>
+              </div>
+              <div class="list-offers owl-carousel owl-theme">
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_green"><i class="fas fa-circle"></i>Best Offer</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>-30%</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="life-card__benefit">
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Khách được đi cửa riêng</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đã bao gồm tất cả các chi phí</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đảm bảo giữ chỗ đến 11h</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_green"><i class="fas fa-circle"></i>Best Offer</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>-30%</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="life-card__benefit">
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Khách được đi cửa riêng</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đã bao gồm tất cả các chi phí</p>
+                        </div>
+                      </div>
+                      <div class="checkout-location">
+                        <div class="checkout-location__icon"><i class="fas fa-check"></i></div>
+                        <div class="checkout-location__text">
+                          <p>Đảm bảo giữ chỗ đến 11h</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="life-popup__info">
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Hoa Quả</p><span>2</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Bàn đặt giữ chỗ</p><span>4</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Khăn giấy</p><span>2</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Hoa quả</p><span>3</span>
+                </div>
+                <div class="popup-amount">
+                  <p>Rượu Whiskey Skyy</p><span>3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="checkout-btn"><a href="co-payment.html">Đặt mua</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="life-wrapper">
+      <section class="life-event">
+        <div class="detail-event">
+          <div class="detail-header">
+            <div class="detail-header__left"><a href="detail-bar.html" class="detail-header__back"><i class="fa fa-chevron-left"></i></a></div>
+            <div class="detail-header__center">
+              <div class="detail-header__logo"><img src="images/bar-logo.jpg"></div>
+              <div class="detail-header__text">
+                <p>1900 NightClub<span>Bar</span></p>
+              </div>
+            </div>
+            <div class="detail-header__right">
+              <div class="icon-round">
+                <div class="icon-round__item btn-menu"><i class="fas fa-ellipsis-h"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="detail-event__banner"><img src="images/event-banner.jpg"></div>
+          <div class="detail-event__content">
+            <div class="container">
+              <div class="detail-event__info">
+                <div class="detail-event__time"><img src="images/i-calendar.svg">
+                  <p>Ngày mai, 25 tháng 3</p>
+                </div>
+                <p class="name">Buffet Drinks Party:<span>BRay & Pharreal Phuong</span></p>
+                <p class="hour">21:00 - 2:00</p>
+              </div>
+              <div class="detail-event__address"><img src="images/i-address.svg"><span>1900 Nightclub</span></div>
+              <div class="detail-event__intro">
+                <p>💋💃🏻 Mở màn cho Buffet Drinks Party dành cho các nàng vào thứ 3 hàng tuần tại 1900 LE THÉÂTRE là bữa tiệc âm nhạc hết nấc cùng 2 anh chàng điển trai: rapper B Ray chủ nhân của loạt hit như "Con Trai Cưng", "Ex's Hate Me" và DJ/Nhà sản xuất tài năng Pharreal Phuong vào thứ 3, 26/3 ✨💝<span>Xem thêm</span></p>
+              </div>
+            </div>
+            <div class="detail-event__booking">
+              <div class="home-title">
+                <h3>Booking Menu</h3>
+              </div>
+              <div class="list-offers owl-carousel owl-theme">
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__sale">-30%</div>
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <p class="life-card__name">Luxury Package</p>
+                      <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="life-card__address"><img src="images/i-address.svg"><span>1900 Nightclub · 15m</span></p>
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                        <div class="life-card__btn"><a href="#" data-toggle="modal" data-target="#lifePopup" class="btn btn-purple btn-round">MUA</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__sale">-30%</div>
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <p class="life-card__name">Luxury Package</p>
+                      <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="life-card__address"><img src="images/i-address.svg"><span>1900 Nightclub · 15m</span></p>
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                        <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__sale">-30%</div>
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <p class="life-card__name">Luxury Package</p>
+                      <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="life-card__address"><img src="images/i-address.svg"><span>1900 Nightclub · 15m</span></p>
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                        <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-offers__item">
+                  <div class="life-card">
+                    <div class="life-card__img"><img src="images/offers-banner.jpg">
+                      <div class="life-card__sale">-30%</div>
+                      <div class="life-card__gradient"></div>
+                      <div class="life-card__badge">
+                        <div class="badge badge_red"><i class="fas fa-circle"></i>hot deal</div>
+                        <div class="badge badge_yellow"><i class="fas fa-circle"></i>129 booked</div>
+                      </div>
+                    </div>
+                    <div class="life-card__content">
+                      <p class="life-card__name">Luxury Package</p>
+                      <p class="life-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="life-card__address"><img src="images/i-address.svg"><span>1900 Nightclub · 15m</span></p>
+                      <div class="life-card__bottom">
+                        <div class="life-card__price">
+                          <p>1.200.000đ</p>
+                          <strike>2.400.000đ</strike>
+                        </div>
+                        <div class="life-card__btn"><a href="#" class="btn btn-purple btn-round">MUA</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+    <script>
+      $('.list-offers').owlCarousel({
+          nav: false,
+          dots: false,
+          autoWidth: true,
+          items: 2
+      })
+    </script>
+    <script>
+      $(".btn-menu").click(function () {
+          $('body').addClass('open-menu');
+      });
+      $(".life-backdrop").click(function () {
+          $('body').removeClass('open-menu');
+      });
+    </script>
+  </body>
+</html>

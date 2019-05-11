@@ -14,6 +14,117 @@ html(lang="vi")
         link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
         link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
+        #lifePopup.modal.fade
+            .modal-dialog.life-popup
+                .modal-content
+                    .modal-header
+                        .life-popup__panagation
+                            span.active
+                            span
+                            span
+                            span
+                            span
+                        button.close(type='button', data-dismiss='modal') ×
+                    // Modal body
+                    .modal-body
+                        .life-popup__detail
+                            .home-title
+                                h3 Luxury Package
+                            .list-offers.owl-carousel.owl-theme
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_green
+                                                    i.fas.fa-circle
+                                                    | Best Offer
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | -30%
+                                        .life-card__content
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                        .life-card__benefit
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Khách được đi cửa riêng
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đã bao gồm tất cả các chi phí
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đảm bảo giữ chỗ đến 11h
+                                .list-offers__item
+                                    .life-card
+                                        .life-card__img
+                                            img(src='images/offers-banner.jpg')
+                                            .life-card__gradient
+                                            .life-card__badge
+                                                .badge.badge_green
+                                                    i.fas.fa-circle
+                                                    | Best Offer
+                                                .badge.badge_yellow
+                                                    i.fas.fa-circle
+                                                    | -30%
+                                        .life-card__content
+                                            .life-card__bottom
+                                                .life-card__price
+                                                    p 1.200.000đ
+                                                    strike 2.400.000đ
+                                        .life-card__benefit
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Khách được đi cửa riêng
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đã bao gồm tất cả các chi phí
+                                            .checkout-location
+                                                .checkout-location__icon
+                                                    i.fas.fa-check
+                                                .checkout-location__text
+                                                    p Đảm bảo giữ chỗ đến 11h
+
+
+                            .life-popup__info
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                                .popup-amount
+                                    p Hoa Quả
+                                    span 2
+                                .popup-amount
+                                    p Bàn đặt giữ chỗ
+                                    span 4
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                                .popup-amount
+                                    p Khăn giấy
+                                    span 2
+                                .popup-amount
+                                    p Hoa quả
+                                    span 3
+                                .popup-amount
+                                    p Rượu Whiskey Skyy
+                                    span 3
+                    .modal-footer
+                        .checkout-btn
+                            a(href="co-payment.html") Đặt mua
+
         main.life-wrapper
             section.life-home
                 .home-header
@@ -241,7 +352,7 @@ html(lang="vi")
                                             p 1.200.000đ
                                             strike 2.400.000đ
                                         .life-card__btn
-                                            a.btn.btn-purple.btn-round(href='#') MUA
+                                            a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#lifePopup") MUA
                         .list-offers__item
                             .life-card
                                 .life-card__img
@@ -266,7 +377,7 @@ html(lang="vi")
                                             p 1.200.000đ
                                             strike 2.400.000đ
                                         .life-card__btn
-                                            a.btn.btn-purple.btn-round(href='#') MUA
+                                            a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#lifePopup") MUA
                         .list-offers__item
                             .life-card
                                 .life-card__img
@@ -291,7 +402,7 @@ html(lang="vi")
                                             p 1.200.000đ
                                             strike 2.400.000đ
                                         .life-card__btn
-                                            a.btn.btn-purple.btn-round(href='#') MUA
+                                            a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#lifePopup") MUA
                         .list-offers__item
                             .life-card
                                 .life-card__img
@@ -316,7 +427,7 @@ html(lang="vi")
                                             p 1.200.000đ
                                             strike 2.400.000đ
                                         .life-card__btn
-                                            a.btn.btn-purple.btn-round(href='#') MUA
+                                            a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#lifePopup") MUA
                 .life-home__events
                     .home-title
                         h3 Events
