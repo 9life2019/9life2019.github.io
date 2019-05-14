@@ -135,21 +135,6 @@
 }
 .checkout-location {
   display: flex;
-  .fa-map-marker-alt, .fa-calendar-alt, .fa-credit-card {
-    color: $main-color;
-    font-size: 16px;
-  }
-  .fa-check, .fa-times {
-    background-color: #29D930;
-    color: $white-1;
-    border-radius: 50%;
-    padding: 5px;
-    font-size: 10px;
-  }
-  .fa-times {
-    background-color: #FF3B30;
-    padding: 5px 7px;
-  }
   &__text {
     padding-left: 10px;
     span {
@@ -176,10 +161,12 @@
 .checkout-btn {
   background-color: $main-color;
   border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   a {
     display: block;
-    width: 100%;
-    padding: 14px 0;
+    padding: 14px 0 14px 10px;
     text-align: center;
     color: $white-1;
     text-transform: uppercase;

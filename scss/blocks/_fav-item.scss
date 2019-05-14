@@ -100,16 +100,7 @@
       &:active{
         background-color: $gray-1;
       }
-      i{
-        margin-right: 10px;
-        font-size: 15px;
-      }
-      .fa-heart{
-        color: #FF3B30;
-      }
-      .fa-share{
-        color: #8F8E94;
-      }
+      span {padding-left: 13px;}
     }
   }
   &__link{

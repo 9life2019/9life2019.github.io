@@ -73,6 +73,10 @@
   }
   .dropdown{
     z-index: 2;
+    img {
+      display: initial;
+      vertical-align: middle;
+    }
     .dropdown-toggle{
       -webkit-appearance: none;
       background: none;
@@ -112,6 +116,7 @@
       line-height: 22px;
       letter-spacing: -0.41px;
       border-bottom: 1px solid #f4f4f4;
+      display: flex;
       &:last-child{
         border-bottom: none;
       }
@@ -122,15 +127,11 @@
       &:active{
         background-color: $gray-1;
       }
-      i{
-        margin-right: 10px;
-        font-size: 15px;
+      img {
+        width: auto;
       }
-      .fa-heart{
-        color: #FF3B30;
-      }
-      .fa-share{
-        color: #8F8E94;
+      span {
+        padding-left: 14px;
       }
     }
   }
