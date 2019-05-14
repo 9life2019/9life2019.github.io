@@ -9,9 +9,19 @@
     &:last-child{
       border-right: none;
     }
-    i{
-      color: #fff;
-      font-size: 14px;
+    .btn-menu {
+      img {
+        vertical-align: middle;
+      }
+    }
+  }
+  &__img {
+    width: 18px;
+    height: 16px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }

@@ -70,6 +70,9 @@
         padding-left: 10px;
         vertical-align: middle;
       }
+      img {
+        vertical-align: text-bottom;
+      }
     }
     .p4{
       font-size: 17px;
@@ -105,18 +108,15 @@
         vertical-align: middle;
         padding-left: 10px;
       }
-      i{
-        color: rgba(255, 255, 255, 0.5);
+      img {
+        vertical-align: middle;
       }
     }
   }
   &__settings{
     text-align: right;
     a{
-      color: #fff;
-    }
-    a:not([href]):not([tabindex]){
-      color: #fff;
+      display: inline-block;
     }
   }
 }

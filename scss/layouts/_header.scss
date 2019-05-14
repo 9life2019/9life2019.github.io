@@ -34,11 +34,11 @@
     .logo-black{
       display: none;
     }
+
   }
   &__search{
-    i{
-      color: $white-1;
-      font-size: $size-20;
+    .search-purple {
+      display: none;
     }
   }
   &_fixed{
@@ -54,8 +54,11 @@
       }
     }
     .home-header__search{
-      i{
-        color: $main-color;
+      .search-white {
+        display: none;
+      }
+      .search-purple {
+        display: block;
       }
     }
   }
@@ -80,6 +83,9 @@
     &:focus{
       color:#fff;
     }
+    img {
+      vertical-align: middle;
+    }
   }
 }
 
@@ -88,13 +94,7 @@
   padding: 15px;
   &__back {
     a {
-      text-decoration: none;
-      color: $main-color;
-      font-size: 17px;
-      line-height: 22px;
-      .fas {
-        padding-right: 8px;
-      }
+      display: inline-block;
     }
   }
   &__text {

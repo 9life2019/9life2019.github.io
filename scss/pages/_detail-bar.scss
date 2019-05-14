@@ -140,6 +140,11 @@
         padding: 0 15px 20px;
         .life-card{
           width: 100%;
+          &__badge {
+            img {
+              width: auto;
+            }
+          }
         }
       }
     }
