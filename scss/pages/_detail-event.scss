@@ -1,50 +1,9 @@
 .detail-event {
-  .detail-header {
-    padding: 15px;
-    &__left{
-      a {
-        background-color: transparent;
-        border: none;
-        color: $main-color;
+  .detail-header{
+    .icon-round{
+      width: auto;
+      &__item{
         width: auto;
-        height: auto;
-        font-size: 17px;
-        padding-right: 20px;
-      }
-    }
-    &__center {
-      flex:1 1 auto;
-      display: flex;
-    }
-    &__right {
-      .fa-ellipsis-h {
-        color: $black-1;
-      }
-    }
-    &__logo {
-      width: 40px;
-      height: 40px;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    &__text {
-      padding-left: 10px;
-      p {
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: -0.24px;
-        color: #000;
-        font-weight: $semibold;
-        span {
-          display: block;
-          font-size: 13px;
-          line-height: 15px;
-          letter-spacing: -0.08px;
-          color: #8F8E94;
-        }
       }
     }
   }
@@ -121,23 +80,13 @@
       }
     }
   }
-  &__booking{
-    .list-offers{
-      padding: 0;
-      display: flex;
-      overflow-x: auto;
-      &__item{
-        padding: 0 15px 20px;
-      }
-    }
-  }
 }
 .life-popup {
   margin: 30px auto 0;
   .modal-header {align-items: center;position: relative;padding: 8px 20px;}
   .modal-content {border-radius: 15px 15px 0 0;height: 100vh;overflow: hidden;}
   .modal-body {padding: 0;overflow-y: auto;}
-  .modal-footer {border-top:none;display: initial;box-shadow: inset 0px 0.5px 0px #CCCCCC;padding: 15px 15px 44px; }
+  .modal-footer {border-top:none;display: initial;box-shadow: inset 0 0.5px 0 #CCCCCC;padding: 15px 15px 44px; }
   .close {
     &:focus {
       outline: none;

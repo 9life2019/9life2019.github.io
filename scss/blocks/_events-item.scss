@@ -25,10 +25,6 @@
   }
   &__time{
     margin-bottom: 8px;
-    i{
-      margin-right: 10px;
-      color: #47FF43;
-    }
     span{
       font-size: 13px;
       line-height: 18px;
@@ -36,6 +32,7 @@
       text-transform: uppercase;
       color: #ffffff;
       font-weight: $semibold;
+      padding-left: 10px;
     }
   }
   &__name{
@@ -79,6 +76,7 @@
     .owl-item{
       img{
         width: auto;
+        display: initial;
       }
     }
   }

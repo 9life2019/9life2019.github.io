@@ -109,8 +109,11 @@
       color: $main-color!important;
       letter-spacing: -0.41px;
       font-weight: $semibold;
-      i{
-        margin-right: 10px;
+      img,span{
+        vertical-align: middle;
+      }
+      span{
+        padding-left: 10px;
       }
     }
   }

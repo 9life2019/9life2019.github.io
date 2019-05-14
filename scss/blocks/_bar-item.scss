@@ -74,8 +74,7 @@
   .dropdown{
     z-index: 2;
     img {
-      display: initial;
-      vertical-align: middle;
+      width: auto;
     }
     .dropdown-toggle{
       -webkit-appearance: none;
@@ -83,14 +82,12 @@
       border: none;
       padding: 0;
       line-height: 0;
-      color: $white-1;
-      font-size: 20px;
+      vertical-align: bottom;
       &:after{
         display: none;
       }
       &:focus{
         outline: none;
-        color:#FFEA31;
       }
     }
     .dropdown-menu{
