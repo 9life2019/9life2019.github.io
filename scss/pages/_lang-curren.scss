@@ -13,6 +13,9 @@
       font-weight: $semibold;
       padding-left: 10px;
     }
+    span,svg{
+      vertical-align: middle;
+    }
   }
   &__list{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -20,7 +23,7 @@
     li{
       padding-left: 15px;
       background-color:#fff;
-      a{
+      p{
         display: block;
         padding: 19px 15px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -28,17 +31,14 @@
         line-height: 22px;
         letter-spacing: -0.41px;
         color: #000000;
-        &:active{
-          background-color: #F7FAFE;
-        }
       }
       &:last-child{
-        a{
+        p{
           border-bottom: none;
         }
       }
       &.active{
-        a{
+        p{
           color: $main-color;
           &:after{
             content: '';

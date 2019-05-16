@@ -1,5 +1,5 @@
 .detail-title{
-  margin-bottom: 20px;
+  margin-bottom:12px;
   h4{
     font-size: 20px;
     line-height: 25px;
@@ -8,7 +8,12 @@
     font-weight: $bold;
     span{
       padding-left: 10px;
-      vertical-align: text-bottom;
+      display: inline-block;
+      margin-top: 1px;
+      letter-spacing: -1px;
+    }
+    img,svg{
+      vertical-align: middle;
     }
   }
 }
@@ -16,8 +21,8 @@
   margin-bottom: 20px;
   padding: 0 15px;
   &__item{
-    padding: 15px 0;
-    border-bottom:1px solid #D3D6E9 ;
+    padding: 12px 0;
+    border-bottom:1px solid #D3D6E9;
   }
   &__title{
     font-size: 11px;
@@ -30,6 +35,7 @@
   }
   &__text{
     display: flex;
+    align-items: center;
     span{
       font-size: 15px;
       line-height: 20px;
@@ -37,26 +43,21 @@
       color: #333;
       font-weight: $semibold;
       padding-left: 10px;
-    }
-    .fa-music{
-      color:#370B7F;
-    }
-    .fa-check-circle{
-      color: #29D930;
-    }
-    .fa-times-circle{
-      color: #FF3B30;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: calc(100% - 20px);
     }
   }
 }
 .view-360{
-  padding-left: 15px;
+  padding-left: 10px;
   margin-bottom: 30px;
   &__slide{
     &__item{
       padding: 0 5px;
       .item-360{
-        width: 333px;
+        width:89vw;
         height: 250px;
         border-radius:10px;
         overflow: hidden;
@@ -75,6 +76,7 @@
   margin-bottom: 30px;
   &__iframe{
     border: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: none;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     iframe{
@@ -97,7 +99,7 @@
       &:last-child{
         border-right: none;
       }
-      span,img{
+      span,svg,img{
         vertical-align: middle;
       }
       span{
@@ -122,13 +124,38 @@
     .home-profile{
       border-radius: 0;
       background: linear-gradient(195.02deg, #6A28FA -0.4%, #250054 82.39%);
+      padding: 10px 15px 20px;
       &__top{
         align-items: initial;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
       }
       &__avatar{
         width: 70px;
         height: 70px;
+        transform: translateY(8px);
+      }
+      &__name{
+        width: calc(100% - 70px);
+        .p1{
+          font-size: 13px;
+          line-height: 18px;
+          letter-spacing: 0;
+          opacity: .6;
+          margin-bottom: 3px;
+        }
+        .p3{
+          margin-top: 10px;
+          span{
+            letter-spacing: 0;
+          }
+        }
+      }
+      &__info{
+        p{
+          span{
+            letter-spacing: 0;
+          }
+        }
       }
     }
   }
@@ -138,13 +165,9 @@
       padding: 0;
       &__item{
         padding: 0 15px 20px;
+        margin: 0;
         .life-card{
           width: 100%;
-          &__badge {
-            img {
-              width: auto;
-            }
-          }
         }
       }
     }
@@ -161,24 +184,79 @@
     border-radius: 10px;
     overflow: hidden;
     display: flex;
+    position: relative;
   }
   &__left{
     width: 50%;
+    padding-right: 3px;
   }
   &__right{
     width: 50%;
     .life-gallery__item{
       height: 50%;
+      &:first-child{
+        padding-bottom: 1.5px;
+      }
+      &:last-child{
+        padding-top: 1.5px;
+      }
     }
   }
   &__item{
     width: 100%;
     height: 100%;
-    padding: 1.5px;
     img{
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+  }
+  &__badge{
+    border-radius: 17px;
+    overflow: hidden;
+    padding: 4px 9px 3px;
+    display: inline-block;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    &__blur{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      filter: blur(10px);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #fff;
+      &:before{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        content: '';
+        display: block;
+        background:rgba(0, 0, 0, 0.5);
+      }
+    }
+    span{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #FFFFFF;
+      opacity: 0.8;
+      font-weight: $semibold;
+      padding-left: 4px;
+    }
+    span,svg{
+      vertical-align: middle;
+      position: relative;
+    }
+    svg{
+      path{
+        opacity: .7;
+      }
     }
   }
 }
@@ -202,9 +280,8 @@
       letter-spacing: -0.41px;
       color: #8F8E94;
       padding-left: 15px;
-      vertical-align: middle;
     }
-    img{
+    span,img,svg{
       vertical-align: middle;
     }
   }

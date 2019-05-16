@@ -2,7 +2,7 @@
   background-color: $main-color;
   border-radius: 10px;
   padding: 20px 15px;
-  margin-bottom: 7px;
+  margin-bottom:6px;
   &__top{
     display: flex;
     justify-content: space-between;
@@ -17,13 +17,16 @@
       justify-content: space-between;
     }
     &__item{
-      border-right: 1px solid #868686;
+      border-right: 1px solid  rgba(255, 255, 255, 0.3);
       width: 33.333%;
       text-align: center;
       &:last-child{
         border-right: none;
       }
       img{
+        vertical-align: middle;
+      }
+      svg{
         vertical-align: middle;
       }
       span{
@@ -47,14 +50,14 @@
     .p1{
       font-size: 20px;
       line-height: 25px;
-      letter-spacing: 0.38px;
+      letter-spacing: -1px;
       opacity: .7;
       color: $white-1;
     }
     .p2{
       font-size: 28px;
       line-height: 30px;
-      letter-spacing: 0.38px;
+      letter-spacing: -1px;
       color: $white-1;
       font-weight: $bold;
     }
@@ -70,8 +73,8 @@
         padding-left: 10px;
         vertical-align: middle;
       }
-      img {
-        vertical-align: text-bottom;
+      svg {
+        vertical-align:middle;
       }
     }
     .p4{
@@ -108,7 +111,7 @@
         vertical-align: middle;
         padding-left: 10px;
       }
-      img {
+      svg{
         vertical-align: middle;
       }
     }

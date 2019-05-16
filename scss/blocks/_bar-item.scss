@@ -1,13 +1,19 @@
 .bar-item{
   position: relative;
   height: 200px;
-  overflow: hidden;
-  border-radius: 6px;
-  white-space: normal;
   &__img{
-    width: 100%;
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    img{
+      width: 100%!important;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__sale{
     position: absolute;
@@ -24,7 +30,7 @@
   }
   &__content{
     position: absolute;
-    bottom:12px;
+    bottom:8px;
     left: 0;
     width: 100%;
     padding: 0 10px;
@@ -40,6 +46,10 @@
       line-height: 15px;
       color: rgba(255, 255, 255, 0.8);
       letter-spacing: -0.08px;
+      span{
+        color: #FFEA31;
+        padding-right: 5px;
+      }
     }
   }
   &__state{
@@ -60,8 +70,10 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.75%, #000000 100%);
+    border-radius: 6px;
+    overflow: hidden;
   }
   &__link{
     position: absolute;
@@ -75,6 +87,7 @@
     z-index: 2;
     img {
       width: auto;
+
     }
     .dropdown-toggle{
       -webkit-appearance: none;
@@ -83,11 +96,17 @@
       padding: 0;
       line-height: 0;
       vertical-align: bottom;
+      svg{
+        opacity: .7;
+      }
       &:after{
         display: none;
       }
       &:focus{
         outline: none;
+        svg{
+          opacity: 1;
+        }
       }
     }
     .dropdown-menu{
@@ -101,10 +120,10 @@
       padding: 0;
       margin: 0;
       border-radius: 6px;
-      overflow: hidden;
       border: none;
       color: #000000;
       font-size: initial;
+      box-shadow:0 4px 30px rgba(0, 0, 0, 0.5215686274509804);
     }
     .dropdown-item{
       padding: 15px;
@@ -137,12 +156,9 @@
   overflow: hidden;
   padding-left: 15px;
   &__item{
-    padding: 0 5px;
-    &:first-child{
-      padding-left: 0;
-    }
+    margin-right: 10px;
     .bar-item{
-      width: 160px;
+      width:42.5vw;
     }
   }
 }

@@ -1,0 +1,19 @@
+.list-icon{
+  &__item{
+    display: flex;
+    align-items:baseline;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    span{
+      padding-left:8px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #333333;
+      font-weight: $regular;
+      width: calc(100% - 16px);
+    }
+  }
+}

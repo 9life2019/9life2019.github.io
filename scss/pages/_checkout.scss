@@ -1,35 +1,84 @@
 .co-payment {
-  background-color: #EFF0F6;
-  padding: 18px;
+  padding: 20px 15px;
   &__date {
-    padding: 20px 0;
+    padding:12px 0 19px;
+  }
+  &__title{
+    margin-bottom: 8px;
+    span{
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #000000;
+      font-weight: $semibold;
+      padding-left: 8px;
+    }
+    span,svg{
+      vertical-align: middle;
+    }
   }
   &__input {
     position: relative;
-    margin-top: 10px;
+    .form-control{
+      font-weight: $semibold;
+      font-size: 17px;
+      line-height: 19px;
+      letter-spacing: -0.41px;
+      color: #000000;
+    }
     button {
       position: absolute;
       padding: 7px 17px;
       background-color: #E7E2F4;
-      top: 8px;
-      right: 15px;
-      color: $black-1;
+      top:50%;
+      transform: translateY(-50%);
+      right: 10px;
       border: none;
       border-radius: 5px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #000000;
+      font-weight: $regular;
       &:focus {
         outline: none;
       }
-    }
-    input::placeholder {
-      font-size: 17px;
-      line-height: 19px;
-      letter-spacing: -0.41px;
-      color: $black-1;
     }
   }
   &__benefit {
     padding-bottom: 30px;
     @include add-border(1px,$main-color,bottom);
+  }
+  &__price{
+    padding: 23px 0 19px;
+    border-bottom: 1px solid #D3D6E9;
+    li{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 7px;
+      &:last-child{
+        padding-bottom: 0;
+      }
+      p{
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: #333333;
+      }
+      &.li-payment{
+        p{
+          font-weight: $semibold;
+          &:last-child{
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.38px;
+            color: #FF3B30;
+            font-weight: $bold;
+          }
+        }
+      }
+    }
   }
   &__detail {
     display: flex;
@@ -56,71 +105,85 @@
       font-weight: $regular;
     }
   }
-  &__info {
+  &__form {
     padding: 20px 0;
     .form-group {
       margin-bottom: 10px;
+    }
+    .form-control{
+      padding: 13px;
     }
     p {
       color:#8F8E94 ;
       line-height: 20px;
       font-size: 15px;
       font-weight: $regular;
+      letter-spacing: -0.24px;
+
     }
   }
   &__radio {
     display: flex;
-    align-items: center;
     padding-bottom: 20px;
     .radio {
       padding-right: 25px;
-      label {
-        font-size: 17px;
-      }
     }
   }
-  &__group {
-    padding: 15px;
-    background-color: $white-1;
-    display: flex;
-    margin: 10px 0;
-    @include add-border(1px,#D3D6E9,all);
-    border-radius: 6px;
-    &.active {
-      @include add-border(1px,$purple-2,all);
-    }
-    &:active {
-      border-color:$purple-2;
-    }
-    .checkout-location {
-      padding: 0;
-      span {
-        font-size: 17px;
-        line-height: 19px;
-        letter-spacing: -0.41px;
-        i {
-          font-size: 11px;
-          line-height: 13px;
-          letter-spacing: 0.07px;
-          color: #777777;
-        }
-      }
-      &__text {
-        padding-left: 15px;
-      }
-    }
+  &__choise{
+    margin-bottom: 10px;
   }
 }
 .checkout-top {
   display: flex;
   justify-content: space-between;
-  &__right {
-    img {
-      border-radius: 10px;
+  &__title{
+    margin-bottom: 15px;
+    h5{
+      font-size: 22px;
+      line-height: 24px;
+      letter-spacing: 0.35px;
+      color: #000000;
+      font-weight: $bold;
     }
+  }
+  &__address{
+    display: flex;
+    align-items: baseline;
+    p{
+      width: calc(100% - 12px);
+      padding-left:8px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      color: #000000;
+      font-weight: $semibold;
+      span{
+        display: block;
+        color: #8F8E94;
+        font-weight: $regular;
+      }
+    }
+  }
+  &__left{
+    width: calc(100% - 90px);
+    padding-right: 10px;
+  }
+  &__right {
+    width: 90px;
     .payment {
       border-radius: 5px;
       vertical-align: text-top;
+    }
+  }
+  &__img{
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 }
@@ -199,13 +262,14 @@
     }
   }
   &__text {
+    text-align: right;
     p {
-      text-align: right;
       font-size: 17px;
       line-height: 22px;
       letter-spacing: -0.41px;
       color: $white-1;
       font-weight: $regular;
+      display: inline-block;
     }
   }
   &__title {
@@ -225,106 +289,12 @@
   }
   &__content {
     margin: 0 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
-  &__box {
-    padding: 23px 20px 28px 23px;
-    border-radius: 10px;
-    background-color: $white-1;
-    border: 1px solid #D3D6E9;
-    &:first-child {
-      border-bottom: 1px dashed #D3D6E9;
-    }
-    &:last-child {
-      border-top:none;
-    }
-  }
-  &__top {
-    @include add-border(1px,#EFF0F6,bottom);
-    .checkout-top {
-      padding-bottom: 25px;
-    }
-    .checkout-title {
-      padding-bottom: 8px;
-    }
-    .checkout-location {
-      &__text {
-        padding-left: 7px;
-        span {
-          font-weight: initial;
-          color: #333333;
-        }
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    .booking-box{
+      margin-bottom: 0;
+      &__top{
+        border-radius: 10px;
       }
-    }
-  }
-  &__info {
-    padding-bottom:20px;
-    p {
-      font-size: 15px;
-      line-height: 20px;
-      color: #555555;
-      letter-spacing: -0.24px;
-      font-weight: $regular;
-      span {
-        display: block;
-        font-size: 20px;
-        line-height: 25px;
-        color: $black-1;
-        letter-spacing: 0.38px;
-      }
-    }
-  }
-  &__middle {
-    padding-top: 25px;
-    .checkout-top {
-      &__text {
-        p {
-          font-size: 15px;
-          line-height: 24px;
-          letter-spacing: -0.24px;
-          color: #333333;
-          font-weight: $regular;
-          margin-bottom: 5px;
-        }
-      }
-      .total {
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: -0.24px;
-        color: $black-1;
-        font-weight: $semibold;
-        margin-top: 10px;
-      }
-    }
-    .checkout-title {
-      span {
-        font-weight: $regular;
-        font-size: 15px;
-        line-height: 20px;
-        letter-spacing: -0.24px;
-        color: #555555;
-      }
-    }
-  }
-  &__bottom {
-    padding-top: 8px;
-    text-align: center;
-    p {
-      font-size: 11px;
-      line-height: 13px;
-      letter-spacing: 0.07px;
-      color:#555555;
-      font-weight: $regular;
-      text-transform: uppercase;
-      margin: 20px 0 5px;
-    }
-    span {
-      display: block;
-      font-size: 26px;
-      line-height: 30px;
-      letter-spacing:0.337647px;
-      color: $main-color;
-      font-weight: $bold;
     }
   }
   &__history {

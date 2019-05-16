@@ -83,15 +83,6 @@
     .owl-dots{
       margin-top: 10px;
     }
-    .owl-dots .owl-dot span{
-      width: 6px;
-      height: 6px;
-      margin: 0 4px;
-      background: #C4C4C4;
-    }
-    .owl-dots .owl-dot.active span{
-      background: $main-color;
-    }
   }
   &__btn{
     text-align: center;

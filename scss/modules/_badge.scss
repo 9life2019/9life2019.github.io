@@ -1,24 +1,41 @@
 .badge{
   background-color: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
   border-radius: 12px;
-  padding: 5px 10px;
-  font-size: 11px;
-  line-height: 13px;
-  letter-spacing: 0.07px;
-  text-transform: uppercase;
-  font-weight:$regular;
-  i{
-    margin-right:5px;
+  padding: 4px 6px 3px;
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  &:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    filter: blur(10px);
+  }
+  span{
+    font-size: 11px;
+    line-height: 13px;
+    letter-spacing: 0.07px;
+    text-transform: uppercase;
+    font-weight:$semibold;
+    color: #ffffff;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .i-dots{
+    display: inline-block;
   }
   &_red{
-    i{
-      color: #FF3B30;
+    .i-dots{
+      background-color: #FF3B30;
     }
   }
   &_yellow{
-    i{
-      color:#FFEA31;
+    .i-dots{
+      background-color: #FFEA31;
     }
   }
   &_green {

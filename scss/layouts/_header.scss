@@ -17,13 +17,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding:30px 15px;
+  padding:15px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index:100;
-  transition:.5s;
   &__logo{
     h1{
       line-height: 0;
@@ -37,28 +36,25 @@
 
   }
   &__search{
-    .search-purple {
-      display: none;
-    }
+
   }
   &_fixed{
     background-color:#ffffff;
     padding: 15px;
     box-shadow: 0 1px 3px 0 rgba(27,27,27,.1);
     .home-header__logo{
-      .logo-white{
-        display: none;
+      .p-purple{
+        fill: $main-color;
       }
-      .logo-black{
-        display: block;
+      .p-black{
+        fill: #111;
       }
     }
     .home-header__search{
-      .search-white {
-        display: none;
-      }
-      .search-purple {
-        display: block;
+      svg{
+        path{
+          stroke: $main-color;
+        }
       }
     }
   }
@@ -115,6 +111,7 @@
 .co-header {
   position: relative;
   padding: 15px;
+  background-color: #fff;
   &__back {
     a {
       display: inline-block;

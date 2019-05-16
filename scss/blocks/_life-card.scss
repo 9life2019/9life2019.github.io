@@ -1,12 +1,11 @@
 .life-card{
-  border-radius: 10px;
-  border: 1px solid #D3D6E9;
-  overflow: hidden;
   &__img{
     height: 150px;
     position: relative;
-    img{
-      width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    >img{
+      width: 100%!important;
       height: 100%;
       object-fit: cover;
     }
@@ -14,6 +13,10 @@
   &__content{
     background-color: #ffffff;
     padding: 15px;
+    border-radius:0 0 10px 10px;
+    border: 1px solid #D3D6E9;
+    border-top: none;
+    overflow: hidden;
   }
   &__sale{
     position: absolute;
@@ -33,7 +36,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height:100%;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 44.75%, #000000 100%);
   }
   &__badge{
@@ -54,7 +57,7 @@
   &__name{
     font-size: 22px;
     line-height: 24px;
-    letter-spacing: 0.35px;
+    letter-spacing:-1px;
     color: #000000;
     font-weight: $bold;
     margin-bottom: 8px;
@@ -77,6 +80,7 @@
   }
   &__address{
     display: flex;
+    align-items: center;
     span{
       font-size: 15px;
       line-height: 20px;
@@ -95,7 +99,7 @@
     p{
       font-size: 20px;
       line-height: 25px;
-      letter-spacing: 0.38px;
+      letter-spacing:-1px;
       color: $main-color;
       font-weight: $bold;
     }
@@ -108,7 +112,7 @@
   }
   &__btn{
     .btn{
-      padding: 3px 20px;
+      padding: 4px 20px;
       font-size: 15px;
       line-height: 20px;
       letter-spacing: -0.24px;
@@ -116,22 +120,12 @@
   }
 }
 .list-offers{
-  padding-left: 15px;
   overflow: hidden;
+  padding-left: 15px;
   &__item{
-    padding: 0 5px;
-    &:first-child{
-      padding-left: 0;
-    }
+    margin-right: 10px;
     .life-card{
-      width: 330px;
-    }
-  }
-  &.owl-carousel{
-    .owl-item{
-      img{
-        width: auto;
-      }
+      width:89vw;
     }
   }
 }

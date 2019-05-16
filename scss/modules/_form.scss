@@ -9,6 +9,7 @@ select.form-control:not([size]):not([multiple]){
   line-height: 22px;
   font-weight: $regular;
   color: $black-1;
+  letter-spacing: -0.41px;
   &:focus{
     color: $black-1;
     border-color: $main-color;
@@ -41,4 +42,18 @@ select.form-control:not([size]):not([multiple]){
     height: 100%;
     object-fit: cover;
   }
+}
+
+// custom slide
+.owl-carousel .owl-item img{
+  width: auto;
+}
+.owl-theme .owl-dots .owl-dot span{
+  width: 6px;
+  height: 6px;
+  margin: 0 4px;
+  background: #C4C4C4;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  background: $main-color;
 }

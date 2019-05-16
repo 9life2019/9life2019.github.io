@@ -1,0 +1,41 @@
+.life-payment{
+  &__img{
+    text-align: center;
+    width: 50px;
+  }
+  &__text{
+    padding-left: 10px;
+    width: calc(100% - 50px);
+    p{
+      font-size: 17px;
+      line-height: 19px;
+      letter-spacing: -0.41px;
+      color: #000000;
+      font-weight: $semibold;
+      margin-bottom: 5px;
+    }
+    span{
+      font-size: 11px;
+      line-height: 13px;
+      letter-spacing: 0.07px;
+      color: #777777;
+      display: block;
+    }
+  }
+  &__item{
+    background: #FFFFFF;
+    border: 1px solid #D3D6E9;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &.active{
+      border-color:#370B7F;
+    }
+  }
+}

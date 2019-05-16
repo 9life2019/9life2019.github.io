@@ -66,256 +66,234 @@ html(lang="vi")
                     .list-bar.owl-carousel.owl-theme
                         .list-bar__item
                             .bar-item
-                                img.bar-item__img(src='images/bar-item.jpg')
+                                .bar-item__img
+                                    img(src='images/bar-item.jpg')
                                 .bar-item__sale -50%
                                 .bar-item__gradient
                                 .bar-item__content
                                     p.p1 1900
-                                    p.p2 Bar · 15m · $$
+                                    p.p2
+                                        span Bar
+                                        | · 15m · $$
                                     .bar-item__state
                                         p.p3 Open
                                         .dropdown
                                             button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                                img(src="images/i-dots.svg")
+                                                svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    g( clip-path='url(#clip0)')
+                                                        path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                        path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                        path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                    defs
+                                                        clippath#clip0
+                                                            rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                             .dropdown-menu
                                                 a.dropdown-item(href='#')
-                                                    img(src="images/i-heart.svg")
+                                                    svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                     span Yêu thích
                                                 a.dropdown-item(href='#')
-                                                    img(src="images/i-share.svg")
+                                                    svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                     span Chia sẻ
                                 a.bar-item__link(href='detail-bar.html')
                         .list-bar__item
                             .bar-item
-                                img.bar-item__img(src='images/bar-item2.jpg')
+                                .bar-item__img
+                                    img(src='images/bar-item2.jpg')
                                 .bar-item__sale -50%
                                 .bar-item__gradient
                                 .bar-item__content
                                     p.p1 SI Cuisine & Mixology
-                                    p.p2 Lounge · 15m · $$$
+                                    p.p2
+                                        span Lounge
+                                        | · 15m · $$$
                                     .bar-item__state
                                         p.p3 Free giờ hát
                                         .dropdown
                                             button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                                img(src="images/i-dots.svg")
+                                                svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    g( clip-path='url(#clip0)')
+                                                        path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                        path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                        path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                    defs
+                                                        clippath#clip0
+                                                            rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                             .dropdown-menu
                                                 a.dropdown-item(href='#')
-                                                    img(src="images/i-heart.svg")
+                                                    svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                     span Yêu thích
                                                 a.dropdown-item(href='#')
-                                                    img(src="images/i-share.svg")
+                                                    svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                        path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                     span Chia sẻ
                                 a.bar-item__link(href='detail-bar.html')
-                        .list-bar__item
-                            .bar-item
-                                img.bar-item__img(src='images/bar-item.jpg')
-                                .bar-item__sale -50%
-                                .bar-item__gradient
-                                .bar-item__content
-                                    p.p1 1900
-                                    p.p2 Bar · 15m · $$
-                                    .bar-item__state
-                                        p.p3 Open
-                                        .dropdown
-                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                                img(src="images/i-dots.svg")
-                                            .dropdown-menu
-                                                a.dropdown-item(href='#')
-                                                    img(src="images/i-heart.svg")
-                                                    span Yêu thích
-                                                a.dropdown-item(href='#')
-                                                    img(src="images/i-share.svg")
-                                                    span Chia sẻ
-                                a.bar-item__link(href='detail-bar.html')
-                        .list-bar__item
-                            .bar-item
-                                img.bar-item__img(src='images/bar-item2.jpg')
-                                .bar-item__sale -50%
-                                .bar-item__gradient
-                                .bar-item__content
-                                    p.p1 SI Cuisine & Mixology
-                                    p.p2 Lounge · 15m · $$$
-                                    .bar-item__state
-                                        p.p3 Free giờ hát
-                                        .dropdown
-                                            button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                                img(src="images/i-dots.svg")
-                                            .dropdown-menu
-                                                a.dropdown-item(href='#')
-                                                    img(src="images/i-heart.svg")
-                                                    span Yêu thích
-                                                a.dropdown-item(href='#')
-                                                    img(src="images/i-share.svg")
-                                                    span Chia sẻ
-                                a.bar-item__link(href='detail-bar.html')
-
                 .life-list__container
                     .life-list__item
                         .bar-item
-                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__img
+                                img(src='images/bar-item.jpg')
                             .bar-item__sale -50%
                             .bar-item__gradient
                             .bar-item__content
                                 p.p1 1900
-                                p.p2 Bar · 15m · $$
+                                p.p2
+                                    span Bar
+                                    | · 15m · $$
                                 .bar-item__state
                                     p.p3 Open
                                     .dropdown
                                         button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
+                                            svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                g( clip-path='url(#clip0)')
+                                                    path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                    path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                    path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                defs
+                                                    clippath#clip0
+                                                        rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                         .dropdown-menu
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
+                                                svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                 span Yêu thích
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
+                                                svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                 span Chia sẻ
                             a.bar-item__link(href='detail-bar.html')
                     .life-list__item
                         .bar-item
-                            img.bar-item__img(src='images/bar-item2.jpg')
-                            .bar-item__sale -50%
-                            .bar-item__gradient
-                            .bar-item__content
-                                p.p1 SI Cuisine & Mixology
-                                p.p2 Lounge · 15m · $$$
-                                .bar-item__state
-                                    p.p3 Free giờ hát
-                                    .dropdown
-                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
-                                        .dropdown-menu
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
-                                                span Yêu thích
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
-                                                span Chia sẻ
-                            a.bar-item__link(href='detail-bar.html')
-                    .life-list__item
-                        .bar-item
-                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__img
+                                img(src='images/bar-item.jpg')
                             .bar-item__sale -50%
                             .bar-item__gradient
                             .bar-item__content
                                 p.p1 1900
-                                p.p2 Bar · 15m · $$
+                                p.p2
+                                    span Bar
+                                    | · 15m · $$
                                 .bar-item__state
                                     p.p3 Open
                                     .dropdown
                                         button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
+                                            svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                g( clip-path='url(#clip0)')
+                                                    path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                    path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                    path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                defs
+                                                    clippath#clip0
+                                                        rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                         .dropdown-menu
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
+                                                svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                 span Yêu thích
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
+                                                svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                 span Chia sẻ
                             a.bar-item__link(href='detail-bar.html')
                     .life-list__item
                         .bar-item
-                            img.bar-item__img(src='images/bar-item2.jpg')
-                            .bar-item__sale -50%
-                            .bar-item__gradient
-                            .bar-item__content
-                                p.p1 SI Cuisine & Mixology
-                                p.p2 Lounge · 15m · $$$
-                                .bar-item__state
-                                    p.p3 Free giờ hát
-                                    .dropdown
-                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
-                                        .dropdown-menu
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
-                                                span Yêu thích
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
-                                                span Chia sẻ
-                            a.bar-item__link(href='detail-bar.html')
-                    .life-list__item
-                        .bar-item
-                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__img
+                                img(src='images/bar-item.jpg')
                             .bar-item__sale -50%
                             .bar-item__gradient
                             .bar-item__content
                                 p.p1 1900
-                                p.p2 Bar · 15m · $$
+                                p.p2
+                                    span Bar
+                                    | · 15m · $$
                                 .bar-item__state
                                     p.p3 Open
                                     .dropdown
                                         button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
+                                            svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                g( clip-path='url(#clip0)')
+                                                    path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                    path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                    path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                defs
+                                                    clippath#clip0
+                                                        rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                         .dropdown-menu
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
+                                                svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                 span Yêu thích
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
+                                                svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                 span Chia sẻ
                             a.bar-item__link(href='detail-bar.html')
                     .life-list__item
                         .bar-item
-                            img.bar-item__img(src='images/bar-item2.jpg')
-                            .bar-item__sale -50%
-                            .bar-item__gradient
-                            .bar-item__content
-                                p.p1 SI Cuisine & Mixology
-                                p.p2 Lounge · 15m · $$$
-                                .bar-item__state
-                                    p.p3 Free giờ hát
-                                    .dropdown
-                                        button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
-                                        .dropdown-menu
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
-                                                span Yêu thích
-                                            a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
-                                                span Chia sẻ
-                            a.bar-item__link(href='detail-bar.html')
-                    .life-list__item
-                        .bar-item
-                            img.bar-item__img(src='images/bar-item.jpg')
+                            .bar-item__img
+                                img(src='images/bar-item.jpg')
                             .bar-item__sale -50%
                             .bar-item__gradient
                             .bar-item__content
                                 p.p1 1900
-                                p.p2 Bar · 15m · $$
+                                p.p2
+                                    span Bar
+                                    | · 15m · $$
                                 .bar-item__state
                                     p.p3 Open
                                     .dropdown
                                         button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
+                                            svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                g( clip-path='url(#clip0)')
+                                                    path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                    path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                    path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                defs
+                                                    clippath#clip0
+                                                        rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                         .dropdown-menu
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
+                                                svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                 span Yêu thích
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
+                                                svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                 span Chia sẻ
                             a.bar-item__link(href='detail-bar.html')
                     .life-list__item
                         .bar-item
-                            img.bar-item__img(src='images/bar-item2.jpg')
+                            .bar-item__img
+                                img(src='images/bar-item.jpg')
                             .bar-item__sale -50%
                             .bar-item__gradient
                             .bar-item__content
-                                p.p1 SI Cuisine & Mixology
-                                p.p2 Lounge · 15m · $$$
+                                p.p1 1900
+                                p.p2
+                                    span Bar
+                                    | · 15m · $$
                                 .bar-item__state
-                                    p.p3 Free giờ hát
+                                    p.p3 Open
                                     .dropdown
                                         button.dropdown-toggle(type='button' data-toggle='dropdown')
-                                            img(src="images/i-dots.svg")
+                                            svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                g( clip-path='url(#clip0)')
+                                                    path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
+                                                    path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
+                                                    path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
+                                                defs
+                                                    clippath#clip0
+                                                        rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                                         .dropdown-menu
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-heart.svg")
+                                                svg(width='16', height='15', viewBox='0 0 16 15', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M14.1867 2.20001C13.8328 1.82064 13.4048 1.51813 12.929 1.31129C12.4533 1.10445 11.9401 0.997711 11.4213 0.997711C10.9026 0.997711 10.3894 1.10445 9.91363 1.31129C9.4379 1.51813 9.00981 1.82064 8.656 2.20001C8.39308 2.48545 8.17219 2.8069 8 3.15468C7.82772 2.80663 7.60635 2.48512 7.34266 2.20001C6.98864 1.82099 6.56049 1.51879 6.08478 1.31218C5.60907 1.10557 5.09597 0.998953 4.57733 0.998953C4.05869 0.998953 3.54559 1.10557 3.06988 1.31218C2.59417 1.51879 2.16602 1.82099 1.812 2.20001C1.07628 2.9867 0.666992 4.02357 0.666992 5.10068C0.666992 6.17779 1.07628 7.21465 1.812 8.00134L8 14.3333L14.1867 8.00268C14.9242 7.21666 15.3348 6.17923 15.3348 5.10135C15.3348 4.02346 14.9242 2.98603 14.1867 2.20001Z', fill='#FF3B30')
                                                 span Yêu thích
                                             a.dropdown-item(href='#')
-                                                img(src="images/i-share.svg")
+                                                svg(width='16', height='14', viewBox='0 0 16 14', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                    path(d='M8 4C2.8 4 0 7.8 0 14C1.5 11.6 2.7 10 8 10V14L16 7L8 0V4Z', fill='#8F8E94')
                                                 span Chia sẻ
                             a.bar-item__link(href='detail-bar.html')
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
@@ -324,10 +302,10 @@ html(lang="vi")
         script(type='text/javascript' src="js/owl.carousel.min.js")
         script.
             $('.list-bar').owlCarousel({
+                loop: true,
                 nav: false,
                 dots: false,
-                autoWidth: true,
-                items: 3
+                autoWidth: true
             })
         script.
             $(".list-header__tab__item").click(function () {
