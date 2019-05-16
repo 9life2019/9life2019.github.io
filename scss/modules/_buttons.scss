@@ -32,3 +32,14 @@
   border:1px solid $main-color;
   color: $main-color;
 }
+button.close{
+  width: 28px;
+  height: 28px;
+  line-height:0;
+  background-color: rgba(143, 142, 148, 0.7);
+  border-radius: 50%;
+  &:focus,
+  &:active{
+    background-color: rgb(143, 142, 148);
+  }
+}

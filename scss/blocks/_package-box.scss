@@ -1,4 +1,5 @@
 .package-box{
+  padding: 0 5px;
   &__title{
     margin-bottom: 20px;
     font-size: 26px;
@@ -39,14 +40,14 @@
   }
   &__icon{
     padding-bottom: 30px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
   }
   &__list{
     &__item{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      border-bottom:0.5px solid rgba(0, 0, 0, 0.2);
       padding: 13px 0;
       &:last-child{
         border-bottom: none;
@@ -63,5 +64,17 @@
         color: #8F8E94;
       }
     }
+  }
+}
+.list-package{
+  padding: 0 10px;
+  &__item{
+  }
+  .owl-dots{
+    margin: 0!important;
+    position: fixed;
+    top: 14px;
+    left:50%;
+    transform: translateX(-50%);
   }
 }
