@@ -121,11 +121,13 @@
 }
 .list-offers{
   overflow: hidden;
-  padding-left: 15px;
   &__item{
-    margin-right: 10px;
+    padding: 0 5px;
     .life-card{
       width:89vw;
     }
+  }
+  .owl-stage{
+    margin-left: 10px;
   }
 }

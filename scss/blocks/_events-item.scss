@@ -95,12 +95,14 @@
   }
 }
 .list-events{
-  padding-left: 15px;
   overflow: hidden;
   &__item{
-    margin-right: 10px;
+    padding: 0 5px;
     .events-item{
       width:71vw;
     }
+  }
+  .owl-stage{
+    margin-left: 10px;
   }
 }
