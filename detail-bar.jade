@@ -14,29 +14,11 @@ html(lang="vi")
         link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
         link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
+        include jades/life-menu.jade
         main.life-wrapper
+            include jades/header.jade
             section.life-detail
                 .detail-bar
-                    .detail-header
-                        .detail-header__left
-                            a.detail-header__back(href='home.html')
-                                svg(width='30', height='30', viewBox='0 0 30 30', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                    path(fill-rule='evenodd', clip-rule='evenodd', d='M30 15C30 6.71596 23.284 -1.01778e-06 15 -6.55671e-07C6.71596 -2.93564e-07 -1.01778e-06 6.71596 -6.55671e-07 15C-2.93564e-07 23.284 6.71596 30 15 30C23.284 30 30 23.284 30 15Z', fill='#FFEA31')
-                                    path(fill-rule='evenodd', clip-rule='evenodd', d='M12.4943 8.98788C12.4943 8.98788 7.36656 14.1036 7.31722 14.1463C7.07626 14.3545 6.92308 14.6584 6.92308 15C6.92308 15.3558 7.09003 15.6706 7.34877 15.8788C7.40442 15.9232 12.4943 21.0121 12.4943 21.0121C12.9424 21.4575 13.6693 21.4575 14.1168 21.0121C14.5648 20.5668 14.5648 19.8443 14.1168 19.3995L10.8386 16.1405L21.9238 16.1405C22.5606 16.1405 23.0769 15.6296 23.0769 15C23.0769 14.3699 22.5606 13.8595 21.9238 13.8595L10.8386 13.8595L14.1168 10.6005C14.5648 10.1557 14.5648 9.43324 14.1168 8.98788C13.6693 8.54251 12.9424 8.54251 12.4943 8.98788Z', fill='black')
-                        .detail-header__right
-                            .icon-round
-                                .icon-round__item.icon-heart
-                                    svg(width='16', height='16', viewBox='0 0 24 22', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                        path(d='M21.243 2.757C18.9 0.414 15.101 0.414 12.758 2.757C12.469 3.046 12.218 3.357 12.001 3.684C11.784 3.357 11.532 3.045 11.244 2.757C8.901 0.414 5.102 0.414 2.759 2.757C0.415997 5.1 0.415997 8.899 2.759 11.242L12 20.485L21.243 11.242C23.586 8.899 23.586 5.1 21.243 2.757Z', stroke='white', stroke-width='1.5', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
-                                .icon-round__item.icon-dots
-                                    svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                        g(clip-path='url(#clip0)')
-                                            path(d='M8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6Z', fill='white')
-                                            path(d='M14 6C12.8954 6 12 6.89543 12 8C12 9.10457 12.8954 10 14 10C15.1046 10 16 9.10457 16 8C16 6.89543 15.1046 6 14 6Z', fill='white')
-                                            path(d='M2 6C0.895429 6 -1.22508e-06 6.89543 -1.12852e-06 8C-1.03196e-06 9.10457 0.89543 10 2 10C3.10457 10 4 9.10457 4 8C4 6.89543 3.10457 6 2 6Z', fill='white')
-                                        defs
-                                            clippath#clip0
-                                                rect(width='16', height='16', fill='white', transform='translate(16 16) rotate(180)')
                     .detail-bar__banner
                         img(src='images/bar-banner.jpg')
                     .detail-bar__name
@@ -343,6 +325,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
         script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $(".life-header__menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
         script.
             $('.list-bar').owlCarousel({
                 loop: true,

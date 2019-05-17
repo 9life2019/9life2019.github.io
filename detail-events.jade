@@ -14,23 +14,11 @@ html(lang="vi")
         link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
         link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
+        include jades/life-menu.jade
         main.life-wrapper
+            include jades/header.jade
             section.life-detail
                 .detail-event
-                    .detail-header
-                        .detail-header__left
-                            a.detail-header__back(href='detail-bar.html')
-                                img(src='images/i-arrow-left.svg')
-                        .detail-header__center
-                            .detail-header__logo
-                                img(src="images/bar-logo.jpg")
-                            .detail-header__text
-                                p 1900 NightClub
-                                    span Bar
-                        .detail-header__right
-                            .icon-round
-                                .icon-round__item.btn-menu
-                                    img(src="images/i-dots-black.svg")
                     .detail-event__banner
                         img(src='images/event-banner.jpg')
                     .detail-event__content
@@ -116,6 +104,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
         script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $(".life-header__menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
         script.
             $('.list-offers').owlCarousel({
                 loop: true,

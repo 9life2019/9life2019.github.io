@@ -13,14 +13,10 @@ html(lang="vi")
         link(rel="stylesheet" href="css/styles.css")
 
     body(ontouchstart='')
+        include jades/life-menu.jade
         main.life-wrapper
+            include jades/header.jade
             section.life-booking
-                .booking-header
-                    .booking-header__back
-                        a
-                            img(src="images/i-arrow-left.svg")
-                    .booking-header__title
-                        p Booking
                 .list-booking
                     .container
                         .list-booking__item
@@ -122,6 +118,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
+        script.
+            $(".life-header__menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
 
 
 

@@ -1,20 +1,16 @@
-.life-wrapper{
-  transition: transform .5s;
-}
 .life-menu{
   background-color: #F7FAFE;
   height: 100%;
-  width:calc(100% - 50px);
+  width:calc(100% - 70px);
   position:fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  z-index:99;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   transition:.5s;
   visibility: hidden;
-  transform: translateX(-100%);
+  transform: scale3d(.8,.8,.8);
   &__profile{
     .home-profile{
       border-radius: 0;
@@ -66,32 +62,34 @@
     }
   }
 }
+.life-wrapper{
+  transition: transform .5s;
+  background-color: #EFF0F6;
+}
 .life-backdrop{
-  width: 50px;
+  width: 100%;
   background-color: rgba(0,0,0,.6);
   position: fixed;
   top: 0;
   right:1px;
   bottom: 0;
-  z-index:100;
+  z-index:9999;
   transition:.5s;
   opacity: 0;
   visibility: hidden;
-  box-shadow: 0 0 12px rgba(0,0,0,.75);
-  transform: translateX(100%);
+  box-shadow: 0 0 12px rgba(0,0,0,.5);
 }
 .open-menu{
   overflow: hidden;
   .life-wrapper{
-    transform: translateX(270px);
+    transform: translateX(calc(100% - 70px));
   }
   .life-menu{
     visibility: visible;
-    transform: translateX(0);
+    transform: scale3d(1,1,1);
   }
   .life-backdrop{
     visibility: visible;
     opacity: 1;
-    transform: translateX(0);
   }
 }

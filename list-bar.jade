@@ -14,20 +14,11 @@ html(lang="vi")
         link(rel="stylesheet" href="css/libs/owl.theme.default.min.css")
         link(rel="stylesheet" href="css/styles.css")
     body(ontouchstart='')
+        include jades/life-menu.jade
         main.life-wrapper
+            include jades/header.jade
             section.life-list
                 .list-header
-                    .list-header__top
-                        .list-header__search
-                            svg(width='20', height='20', viewBox='0 0 22 22', fill='none', xmlns='http://www.w3.org/2000/svg')
-                                path(d='M21 21L14.656 14.656', stroke='white', stroke-width='1.5', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
-                                path(d='M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z', stroke='white', stroke-width='1.5', stroke-miterlimit='10', stroke-linecap='round', stroke-linejoin='round')
-                        .list-header__tab
-                            .list-header__tab__group
-                                a.list-header__tab__item.active
-                                    | Listing
-                                a.list-header__tab__item
-                                    | Map
                     .list-header__bottom
                         .list-header__nav
                             .list-nav
@@ -328,6 +319,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
         script(type='text/javascript' src="js/owl.carousel.min.js")
+        script.
+            $(".life-header__menu").click(function () {
+                $('body').addClass('open-menu');
+            });
+            $(".life-backdrop").click(function () {
+                $('body').removeClass('open-menu');
+            });
         script.
             $('.list-bar').owlCarousel({
                 loop: true,
