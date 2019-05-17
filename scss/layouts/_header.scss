@@ -169,6 +169,9 @@
         background-color: $main-color;
       }
     }
+    a:not([href]):not([tabindex]){
+      color: #fff;
+    }
   }
   &__nav{
     display: flex;
@@ -181,48 +184,6 @@
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
-    }
-  }
-  &__map{
-    background-color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 40px;
-    padding: 0 5px;
-    .form-group{
-      margin-bottom: 0;
-      width: 33.333%;
-      padding: 0 5px;
-      .form-control{
-        padding: 5px 8px;
-        font-size: 13px;
-        line-height: 15px;
-        letter-spacing: -0.08px;
-        color: #111111;
-        border-radius: 5px;
-      }
-      .btn{
-        padding: 7px 10px;
-        font-size: 13px;
-        line-height: 15px;
-        letter-spacing: -0.08px;
-        text-transform: initial;
-        font-weight: 400;
-        width: 100%;
-        img,span,svg{
-          vertical-align: middle;
-        }
-        span{
-          padding-left: 7px;
-        }
-      }
-      &.active{
-        .form-control{
-          border-color: $main-color;
-          color: $main-color;
-        }
-      }
     }
   }
   &__filter{
