@@ -151,6 +151,13 @@
       }
     }
   }
+  &_close{
+    .bar-item__state{
+      .p3{
+        color: #FF3B30;
+      }
+    }
+  }
 }
 .list-bar{
   overflow: hidden;

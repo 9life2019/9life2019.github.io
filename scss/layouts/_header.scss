@@ -152,7 +152,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 1px solid #BFA2FF;
+      border: 1px solid $main-color;
       border-radius: 4px;
       width: 200px;
       margin: auto;
@@ -166,7 +166,7 @@
       color: #FFFFFF;
       padding: 4px 0;
       &.active{
-        background-color: #BFA2FF;
+        background-color: $main-color;
       }
     }
   }
@@ -178,7 +178,6 @@
     height: 40px;
     .list-nav{
       width: calc(100% - 40px);
-      padding-left: 15px;
       overflow-x: auto;
       -webkit-overflow-scrolling: touch;
       white-space: nowrap;
@@ -211,7 +210,7 @@
         text-transform: initial;
         font-weight: 400;
         width: 100%;
-        img,span{
+        img,span,svg{
           vertical-align: middle;
         }
         span{
@@ -225,6 +224,17 @@
         }
       }
     }
+  }
+  &__filter{
+    position: fixed;
+    top:100px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+    transition: .3s;
+    visibility: hidden;
+    opacity: 0;
   }
 }
 
