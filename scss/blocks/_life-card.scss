@@ -118,6 +118,20 @@
       letter-spacing: -0.24px;
     }
   }
+  &__room{
+    display: flex;
+    align-items: baseline;
+    span{
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      text-transform: uppercase;
+      color: #777777;
+      font-weight: $semibold;
+      padding-left: 8px;
+      width: calc(100% - 16px);
+    }
+  }
 }
 .list-offers{
   overflow: hidden;

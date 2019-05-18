@@ -1,0 +1,85 @@
+.change-date{
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 10px 20px #E8E0F8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  &__value{
+    p{
+      span{
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+        text-transform: uppercase;
+        color: #000000;
+        font-weight: $semibold;
+        padding-left: 8px;
+      }
+      span,svg{
+        vertical-align: middle;
+      }
+    }
+  }
+  &__btn{
+    button{
+      border: none;
+      background: #E7E2F4;
+      border-radius: 5px;
+      font-size: 15px;
+      line-height: 20px;
+      letter-spacing: -0.24px;
+      font-weight: $regular;
+      color: #000000;
+      padding: 6px 17px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+.list-button{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 12px;
+  li{
+    width: 50%;
+    padding: 0 3px;
+    button{
+      background: #FFFFFF;
+      border: 1px solid #D3D6E9;
+      box-sizing: border-box;
+      border-radius: 6px;
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      text-transform: uppercase;
+      font-weight: $semibold;
+      color: #333;
+      padding: 10px 15px;
+      width: 100%;
+      &:focus{
+        outline: none;
+      }
+      span{
+        color: #777;
+        padding-left: 5px;
+      }
+    }
+  }
+}
+.detail-karaoke{
+  .home-profile{
+    margin-bottom: 0;
+  }
+  .list-group{
+    &__text{
+      span{
+        padding: 0;
+      }
+    }
+  }
+
+}
