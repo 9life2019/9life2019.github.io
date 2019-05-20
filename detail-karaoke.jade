@@ -86,7 +86,7 @@ html(lang="vi")
                                                 p 1.200.000đ
                                                 strike 2.400.000đ
                                             .life-card__btn
-                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#orderPopup") MUA
+                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#bookModal") MUA
                             .list-offers__item
                                 .life-card
                                     .life-card__img
@@ -112,7 +112,7 @@ html(lang="vi")
                                                 p 1.200.000đ
                                                 strike 2.400.000đ
                                             .life-card__btn
-                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#orderPopup") MUA
+                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#bookModal") MUA
                             .list-offers__item
                                 .life-card
                                     .life-card__img
@@ -138,7 +138,7 @@ html(lang="vi")
                                                 p 1.200.000đ
                                                 strike 2.400.000đ
                                             .life-card__btn
-                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#orderPopup") MUA
+                                                a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#bookModal") MUA
                     .detail-bar__info
                         .home-title
                             h3 Information
@@ -272,6 +272,7 @@ html(lang="vi")
                                         path(d='M12 7.89209C9.731 7.89209 7.892 9.73159 7.892 12.0001C7.892 14.2686 9.7315 16.1081 12 16.1081C14.2685 16.1081 16.108 14.2686 16.108 12.0001C16.108 9.73159 14.269 7.89209 12 7.89209ZM12 14.6666C10.527 14.6666 9.3335 13.4726 9.3335 12.0001C9.3335 10.5271 10.5275 9.33359 12 9.33359C13.473 9.33359 14.6665 10.5276 14.6665 12.0001C14.6665 13.4731 13.473 14.6666 12 14.6666Z', fill='white')
                                         path(d='M16.2705 8.68953C16.8007 8.68953 17.2305 8.25972 17.2305 7.72953C17.2305 7.19934 16.8007 6.76953 16.2705 6.76953C15.7403 6.76953 15.3105 7.19934 15.3105 7.72953C15.3105 8.25972 15.7403 8.68953 16.2705 8.68953Z', fill='white')
                                     span instagram.com/1900.hn
+        include jades/bookModal.jade
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
@@ -296,6 +297,12 @@ html(lang="vi")
                 nav: false,
                 dots: false,
                 autoWidth: true
+            })
+        script.
+            $('.list-package').owlCarousel({
+                nav: false,
+                dots: true,
+                items: 1
             })
 
 

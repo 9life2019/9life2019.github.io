@@ -64,7 +64,7 @@ html(lang="vi")
                                                     p 1.200.000đ
                                                     strike 2.400.000đ
                                                 .life-card__btn
-                                                    a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#orderPopup") MUA
+                                                    a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#bookModal") MUA
                                 .list-offers__item
                                     .life-card
                                         .life-card__img
@@ -90,7 +90,8 @@ html(lang="vi")
                                                     p 1.200.000đ
                                                     strike 2.400.000đ
                                                 .life-card__btn
-                                                    a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#orderPopup") MUA
+                                                    a.btn.btn-purple.btn-round(href='#' data-toggle="modal" data-target="#bookModal") MUA
+        include jades/bookModal.jade
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
@@ -116,4 +117,9 @@ html(lang="vi")
                 dots: false,
                 autoWidth: true
             })
-
+        script.
+            $('.list-package').owlCarousel({
+                nav: false,
+                dots: true,
+                items: 1
+            })
