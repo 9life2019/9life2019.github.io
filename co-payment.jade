@@ -2,17 +2,10 @@
 doctype html
 html(lang="vi")
     head
-        title 9life
-        meta(charset="utf-8")
-        meta(http-equiv="x-ua-compatible" content="ie=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1, user-scalable=no")
-        meta(name='format-detection', content='telephone=no')
-        link(rel='shortcut icon', type='image/x-icon', href='images/logo-purple.png')
-
-        link(rel="stylesheet" href="css/libs/bootstrap.min.css")
-        link(rel="stylesheet" href="css/styles.css")
+        include jades/head.jade
     body(ontouchstart='')
         include jades/life-menu.jade
+        include jades/life-search.jade
         main.life-wrapper
             include jades/header.jade
             section.life-checkout
@@ -129,6 +122,13 @@ html(lang="vi")
         script(type='text/javascript' src="js/jquery-3.2.1.slim.min.js")
         script(type='text/javascript' src="js/popper.min.js")
         script(type='text/javascript' src="js/bootstrap.min.js")
+        script.
+            $(".life-header__search").click(function () {
+                $('body').addClass('open-search');
+            });
+            $(".p-cancel").click(function () {
+                $('body').removeClass('open-search');
+            });
         script.
             $(".life-header__menu").click(function () {
                 $('body').addClass('open-menu');

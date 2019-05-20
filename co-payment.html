@@ -8,6 +8,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="shortcut icon" type="image/x-icon" href="images/logo-purple.png">
     <link rel="stylesheet" href="css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body ontouchstart="">
@@ -50,6 +52,104 @@
         </ul>
       </div>
     </section>
+    <section class="life-search">
+      <div class="life-search__header">
+        <h5>Tìm kiếm</h5>
+        <p class="p-cancel">Cancel</p>
+      </div>
+      <div class="life-search__input">
+        <input type="text" placeholder="Nhập từ khóa" class="form-control">
+        <button type="button" class="button-search">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <!--button.button-remove(type='button')-->
+        <!--    svg(width='16', height='16', viewBox='0 0 16 16', fill='none', xmlns='http://www.w3.org/2000/svg')-->
+        <!--        path(d='M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM11.5 10.1L10.1 11.5L8 9.4L5.9 11.5L4.5 10.1L6.6 8L4.5 5.9L5.9 4.5L8 6.6L10.1 4.5L11.5 5.9L9.4 8L11.5 10.1Z', fill='#BBBBBB')-->
+        <!---->
+      </div>
+      <div class="life-search__result">
+        <div class="life-search__group">
+          <div class="life-search__title">
+            <p class="p1">Search History</p>
+            <p class="p2">Clear History</p>
+          </div>
+          <ul class="life-search__list">
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>1900 Nightclub</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Karaoke Đống Đa</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>1900 Nightclub</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Karaoke Đống Đa</span></a></li>
+          </ul>
+        </div>
+        <div class="life-search__group">
+          <div class="life-search__title">
+            <p class="p1">Most Searches</p>
+          </div>
+          <ul class="life-search__list">
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>1900 Nightclub</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Karaoke Đống Đa</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>1900 Nightclub</span></a></li>
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Karaoke Đống Đa</span></a></li>
+          </ul>
+        </div>
+        <div class="life-search__group suggestions">
+          <div class="life-search__title">
+            <p class="p1">Suggestions</p>
+          </div>
+          <ul class="life-search__list">
+            <li><a href="#">
+                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M21 21L14.656 14.656" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Phố Châu Long</span></a></li>
+            <li><a href="#">
+                <svg width="18" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6.75C13 10.425 7 16.5 7 16.5C7 16.5 1 10.425 1 6.75C1 2.925 4.075 0.75 7 0.75C9.925 0.75 13 2.925 13 6.75Z" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M7 9C8.24264 9 9.25 7.99264 9.25 6.75C9.25 5.50736 8.24264 4.5 7 4.5C5.75736 4.5 4.75 5.50736 4.75 6.75C4.75 7.99264 5.75736 9 7 9Z" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Chiến Hạnh - Karaoke</span></a></li>
+            <li><a href="#">
+                <svg width="18" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6.75C13 10.425 7 16.5 7 16.5C7 16.5 1 10.425 1 6.75C1 2.925 4.075 0.75 7 0.75C9.925 0.75 13 2.925 13 6.75Z" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M7 9C8.24264 9 9.25 7.99264 9.25 6.75C9.25 5.50736 8.24264 4.5 7 4.5C5.75736 4.5 4.75 5.50736 4.75 6.75C4.75 7.99264 5.75736 9 7 9Z" stroke="#C6C6C6" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg><span>Crown Opera - Bar</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <main class="life-wrapper">
       <div class="life-backdrop"></div>
       <header class="life-header"><a class="life-header__logo">
@@ -64,7 +164,7 @@
               <path d="M68.7333 12.1775C67.3872 10.7152 65.6573 9.97266 63.5905 9.97266C61.3439 9.97266 59.5693 10.6843 58.1647 12.1476C56.7624 13.6098 56.0521 15.4095 56.0521 17.4961C56.0521 19.6595 56.7727 21.4787 58.1945 22.903C59.6747 24.3274 61.5134 25.0195 63.8162 25.0195C66.5784 25.0195 68.6829 23.9693 70.0692 21.8999L70.1035 21.8494L67.4834 20.316L67.4536 20.3585C66.6402 21.5108 65.427 22.0939 63.8448 22.0939C62.6442 22.0939 61.6818 21.8092 60.9028 21.225C60.1146 20.6535 59.6162 19.8788 59.3825 18.8596H70.6374L70.6454 18.8125C70.7222 18.3764 70.76 17.9552 70.76 17.5248C70.76 15.4393 70.0783 13.6397 68.7333 12.1775ZM60.7653 13.7946C61.5272 13.1725 62.4414 12.8707 63.563 12.8707C64.6181 12.8707 65.4682 13.1542 66.1613 13.7372C66.8785 14.3444 67.3437 15.1891 67.5464 16.2473H59.3539C59.5555 15.219 60.0298 14.3937 60.7653 13.7946Z" fill="white" class="p-black"></path>
             </svg>
           </h1></a>
-        <div class="life-header__icon"><a href="search.html" class="life-header__search">
+        <div class="life-header__icon"><a class="life-header__search">
             <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M21 21L14.656 14.656" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
               <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -216,6 +316,14 @@
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
     <script type="text/javascript" src="js/popper.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script>
+      $(".life-header__search").click(function () {
+          $('body').addClass('open-search');
+      });
+      $(".p-cancel").click(function () {
+          $('body').removeClass('open-search');
+      });
+    </script>
     <script>
       $(".life-header__menu").click(function () {
           $('body').addClass('open-menu');
