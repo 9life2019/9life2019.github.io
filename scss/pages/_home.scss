@@ -38,26 +38,26 @@
   }
 }
 .home-tab{
+  margin: 0 -15px;
   &__row{
     display: flex;
-    margin: 0 -3px;
   }
   &__item{
     width: 33.333%;
-    padding:0 3px;
+    border-right: 1px solid #EFF0F7;
+    &:last-child{
+      border-right: none;
+    }
     a{
       display: block;
-      background: linear-gradient(180deg, #E1E5FF 0%, rgba(255, 255, 255, 0) 62.43%), $white-1;
-      border: 1.5px solid $white-1;
+      background:#fff;
       box-sizing: border-box;
-      box-shadow: 0 2px 5px #D7CFE8;
-      border-radius: 10px;
       color: $purple-2;
       text-align: center;
       height: 80px;
       padding-top:9px;
       &:active{
-        background: linear-gradient(90deg, #E1E5FF 0%, rgba(255, 255, 255, 0) 62.43%), $white-1;
+        background:#f1f1f1;
       }
     }
     a:not([href]):not([tabindex]){
